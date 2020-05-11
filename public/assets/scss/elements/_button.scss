@@ -3,11 +3,11 @@ Buttons
 ------------------------------------*/
 
 .button {
-    font-weight: 600;
+    font-weight: 700;
     position: relative;
-    border-radius: 3px;
     white-space: nowrap;
     display: inline-block;
+    margin-right: 2px;
     transition: all 0.3s;
 }
 .button-block {
