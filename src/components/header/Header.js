@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useRouteMatch } from "react-router-dom";
+import { useRouteMatch, NavLink, Link } from "react-router-dom";
 import { FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
 
 function Header() {
@@ -22,10 +22,10 @@ function Header() {
                 <ul className="header-nav">
                     {menuItems.map((item, index) => (
                         <li key={index}>
-                            <Link to={`${url}/${item.link}`}>
+                            <NavLink to={`${url}/${item.link}`} activeClassName="active">
                                 <span className="count">{index + 1}</span>
                                 <span className="anchor">{item.title}</span>
-                            </Link>
+                            </NavLink>
                         </li>
                     ))}
                 </ul>
@@ -54,9 +54,9 @@ function Sidenav(props) {
                 <ul className="sidenav-nav">
                     {menuItems.map((item, index) => (
                         <li key={index}>
-                            <Link to={`${url}/${item.link}`}>
+                            <NavLink to={`${url}/${item.link}`} activeClassName="active">
                                 <span className="anchor">{item.title}</span>
-                            </Link>
+                            </NavLink>
                         </li>
                     ))}
                 </ul>

@@ -74,11 +74,11 @@
     display: none;
 }
 .app-header .header-nav li:hover .anchor,
-.app-header .header-nav li.active .anchor {
+.app-header .header-nav li .active .anchor {
     display: block;
 }
-.app-header .header-nav li.active,
-.app-header .header-nav li.active:before {
+.app-header .header-nav li .active,
+.app-header .header-nav li .active:before {
     color: var(--primary);
     border-color: var(--primary);
     background-color: var(--primary);
@@ -227,20 +227,22 @@
                 }
             }
         }
-        li.active {
-            .count {
-                display: none;
-            }
-            .anchor {
-                display: block;
-            }
-            color: var(--primary);
-            border-color: var(--primary);
-            background-color: var(--primary);
-            &:before {
+        li {
+            .active {
+                .count {
+                    display: none;
+                }
+                .anchor {
+                    display: block;
+                }
                 color: var(--primary);
                 border-color: var(--primary);
                 background-color: var(--primary);
+                &:before {
+                    color: var(--primary);
+                    border-color: var(--primary);
+                    background-color: var(--primary);
+                }
             }
         }
     }
