@@ -3,9 +3,8 @@
 ------------------------------------*/
 
 // Main Colors
-$base-0: #f9f9ff;
-$base-0: #fff;
-$base-1: #000;
+$base-0: #000;
+$base-1: #fff;
 $base-2: "";
 $base-3: "";
 $primary: #f9004d;
@@ -51,7 +50,7 @@ $fonts: "../../../fonts";
 $images: "../../../images";
 
 $heading-font: $font-family-1;
-$heading-color: $black;
+$heading-color: $base-1;
 
 $h1: 64px;
 $h2: 54px;
@@ -65,7 +64,7 @@ $border-color: $primary;
 
 $space: 120px;
 
-$text-color: #333;
+$text-color: $base-1;
 $danger: #dc3545;
 $success: #28a745;
 

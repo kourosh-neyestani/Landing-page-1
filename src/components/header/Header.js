@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useRouteMatch } from "react-router-dom";
 import { FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
 
 function Header() {
+    let { url } = useRouteMatch();
     const [displaySidenav, setDisplaySidenav] = useState(false);
+
+    console.log(url);
 
     return (
         <>
@@ -19,7 +22,7 @@ function Header() {
                 <ul className="header-nav">
                     {menuItems.map((item, index) => (
                         <li key={index}>
-                            <Link to={item.link}>
+                            <Link to={`${url}/${item.link}`}>
                                 <span className="count">{index + 1}</span>
                                 <span className="anchor">{item.title}</span>
                             </Link>
@@ -39,6 +42,8 @@ function Sidenav(props) {
         setDisplaySidenav(props.display);
     }, [props]);
 
+    let { url } = useRouteMatch();
+
     return (
         <div className={`app-sidenav ${displaySidenav && "active"}`}>
             <div className="sidenav-menu">
@@ -49,9 +54,9 @@ function Sidenav(props) {
                 <ul className="sidenav-nav">
                     {menuItems.map((item, index) => (
                         <li key={index}>
-                            <a href={item.link}>
+                            <Link to={`${url}/${item.link}`}>
                                 <span className="anchor">{item.title}</span>
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
@@ -83,7 +88,7 @@ function Sidenav(props) {
 
 const menuItems = [
     {
-        link: "intro",
+        link: `intro`,
         title: "Intro",
     },
     {
