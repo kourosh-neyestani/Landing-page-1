@@ -70,7 +70,7 @@
     border: 1px solid var(--base-1);
 }
 .app-header .header-nav li:hover .count,
-.app-header .header-nav li.active .count {
+.app-header .header-nav li .active .count {
     display: none;
 }
 .app-header .header-nav li:hover .anchor,
