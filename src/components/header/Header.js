@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
     return (
-        <header className="site-header">
+        <header className="app-header">
             <div className="header-logo">
                 <Link to={`/home-1`}>Mitra.</Link>
             </div>
