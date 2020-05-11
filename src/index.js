@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 
 // Scenes
+import Home from "./scenes/home/Home";
 
 // Stylesheet
 import "./index.scss";
@@ -12,7 +13,7 @@ const Root = () => {
     return (
         <BrowserRouter basename={"/"}>
             <Switch>
-                {/* <Route exact path={`${process.env.PUBLIC_URL}/home-1`} component={Home} /> */}
+                <Route exact path={`${process.env.PUBLIC_URL}/home-1`} component={Home} />
             </Switch>
         </BrowserRouter>
     );
