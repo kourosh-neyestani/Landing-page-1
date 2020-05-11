@@ -1,0 +1,88 @@
+/*------------------------------------
+    Section: About
+------------------------------------*/
+
+.section-about {
+    overflow: hidden;
+    position: relative;
+}
+
+// About 3
+.section-about-3 {
+    
+}
+
+// About 6
+.section-about-6 {
+    .el-heading {
+        margin-bottom: 25px;
+    }
+    .about-us-box {
+        height: 100%;
+        overflow: hidden;
+        text-align: center;
+        padding: 30px;
+        @include overlay("pattern");
+
+        .image {
+            z-index: 3;
+            height: 100%;
+            @extend .display-center;
+            @include overlay("image");
+        }
+        .shape-1,
+        .shape-2 {
+            width: 60%;
+            opacity: 0.6;
+            padding-top: 30%;
+            position: absolute;
+        }
+        .shape-1 {
+            top: 0;
+            left: 0;
+            border-top: 3px solid;
+            border-left: 3px solid;
+            border-color: $primary;
+        }
+        .shape-2 {
+            right: 0;
+            bottom: 0;
+            border-right: 3px solid;
+            border-bottom: 3px solid;
+            border-color: $primary;
+        }
+        .shape-3 {
+            top: 54%;
+            right: 0;
+            z-index: 15;
+            color: $white;
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: left;
+            position: absolute;
+            padding: 30px 30px 45px;
+            background-color: $primary;
+
+            span {
+                display: block;
+                font-size: 45px;
+                padding: 0;
+            }
+            &:after {
+                right: 8px;
+                bottom: -21px;
+                content: "";
+                opacity: 0.45;
+                display: block;
+                position: absolute;
+                border: 22px solid transparent;
+                border-bottom-color: $primary;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    .el-progress:last-child {
+        margin-bottom: 30px;
+    }
+}

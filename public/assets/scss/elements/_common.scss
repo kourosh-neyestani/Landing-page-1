@@ -1,0 +1,102 @@
+/*------------------------------------
+    Element: Headline
+------------------------------------*/
+
+.el-headline {
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+
+    p {
+        color: $text-color;
+        display: block;
+        margin-bottom: 0;
+    }
+    h2 {
+        font-size: 45px;
+        line-height: 1.4;
+    }
+    .el-headline-link {
+        right: 0;
+        bottom: 3px;
+        position: absolute;
+
+        span {
+            font-weight: 700;
+            display: inline-block;
+            padding-right: 9px;
+        }
+        .icon {
+            top: 2px;
+            color: $primary;
+            font-size: 14px;
+            position: relative;
+        }
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+.el-headline {
+    &.center {
+        max-width: $sm;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        .el-headline-link {
+            left: 0;
+            right: 0;
+            position: relative;
+            margin: 15px auto 0;
+        }
+        p + .el-headline-link {
+            margin: 30px auto 0;
+        }
+    }
+}
+
+/*------------------------------------
+    Element: circle
+------------------------------------*/
+
+.el-circle {
+    width: 100%;
+    position: absolute;
+}
+
+// circle 1
+.el-circle-1 {
+    width: 600px;
+}
+.el-circle-1 .circle {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    @extend .shadow-left;
+}
+.el-circle-1 .circle,
+.el-circle-1 .circle:before,
+.el-circle-1 .circle:after {
+    display: block;
+    border-radius: 50%;
+    background-color: $primary;
+}
+.el-circle-1 .circle:before,
+.el-circle-1 .circle:after {
+    content: "";
+    position: absolute;
+    background-color: $white;
+    @extend .display-center;
+}
+.el-circle-1 .circle:before {
+    width: 72%;
+    height: 72%;
+    opacity: 0.1;
+}
+.el-circle-1 .circle:after {
+    width: 36%;
+    height: 36%;
+    opacity: 0.1;
+}

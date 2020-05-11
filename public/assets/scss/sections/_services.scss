@@ -1,0 +1,52 @@
+/*------------------------------------
+    Section: Service
+------------------------------------*/
+
+.section-service {
+    .card-item {
+        position: relative;
+
+        p {
+            color: $text-color;
+            font-size: 0.9em;
+            margin: 0;
+        }
+        .button {
+            margin-bottom: 15px;
+        }
+    }
+}
+// Service 1
+.section-service-1 {
+    .card-item {
+        margin-bottom: 45px;
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+// Service 2 & 3
+.section-service-2,
+.section-service-3 {
+    position: relative;
+
+    .column {
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .card-item {
+        padding: 30px;
+        margin-bottom: 30px;
+        background-color: $white;
+        @extend .shadow-3;
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    }
+}
