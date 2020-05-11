@@ -1,28 +1,83 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
 
 function Header() {
+    const [displaySidenav, setDisplaySidenav] = useState(false);
+
     return (
-        <header className="app-header">
-            <div className="header-logo">
-                <Link to={`/home-1`}>Mitra.</Link>
+        <>
+            <header className="app-header">
+                <div className="header-logo">
+                    <Link to={`/home-1`}>Mitra</Link>
+                </div>
+                <Link to={`/home-1`}>
+                    <button type="button" className="button button-menu button-open-sidenav" onClick={() => setDisplaySidenav(true)}>
+                        <span></span>
+                    </button>
+                </Link>
+                <ul className="header-nav">
+                    {menuItems.map((item, index) => (
+                        <li key={index}>
+                            <Link to={item.link}>
+                                <span className="count">{index + 1}</span>
+                                <span className="anchor">{item.title}</span>
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            </header>
+            <Sidenav display={displaySidenav} />
+        </>
+    );
+}
+
+function Sidenav(props) {
+    const [displaySidenav, setDisplaySidenav] = useState(props.display);
+
+    useEffect(() => {
+        setDisplaySidenav(props.display);
+    }, [props]);
+
+    return (
+        <div className={`app-sidenav ${displaySidenav && "active"}`}>
+            <div className="sidenav-menu">
+                <div className="logo">
+                    <Link to={`/home-1`}>Mitra</Link>
+                </div>
+                <button className="button button-close-sidenav" onClick={() => setDisplaySidenav(false)}></button>
+                <ul className="sidenav-nav">
+                    {menuItems.map((item, index) => (
+                        <li key={index}>
+                            <a href={item.link}>
+                                <span className="anchor">{item.title}</span>
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+                <div className="sidenav-links">
+                    <ul>
+                        <li>
+                            <a href="/">
+                                <FaTwitter className="icon" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <FaGithub className="icon" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <FaInstagram className="icon" />
+                            </a>
+                        </li>
+                    </ul>
+                    <p>Follow Me</p>
+                </div>
             </div>
-            <Link to={`/home-1`}>
-                <button type="button" className="button button-menu button-open-sidenav">
-                    <span></span>
-                </button>
-            </Link>
-            <ul className="header-nav">
-                {menuItems.map((item, index) => (
-                    <li key={index}>
-                        <Link to={item.link}>
-                            <span className="count">{index + 1}</span>
-                            <span className="anchor">{item.title}</span>
-                        </Link>
-                    </li>
-                ))}
-            </ul>
-        </header>
+            <span className="sidenav-close" />
+        </div>
     );
 }
 
