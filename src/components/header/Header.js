@@ -54,7 +54,7 @@ function Sidenav(props) {
                 <ul className="sidenav-nav">
                     {menuItems.map((item, index) => (
                         <li key={index}>
-                            <NavLink to={`${url}/${item.link}`} activeClassName="active">
+                            <NavLink to={`${url}${item.link}`} activeClassName="active">
                                 <span className="anchor">{item.title}</span>
                             </NavLink>
                         </li>
