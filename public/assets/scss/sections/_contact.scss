@@ -1,0 +1,92 @@
+/*------------------------------------
+Contact
+------------------------------------*/
+
+.section-contact-1 {
+    .content {
+        right: 0;
+        bottom: 0;
+        width: 60%;
+        float: right;
+        padding: 0 50px;
+        background-color: var(--base-0);
+        .form {
+            padding-bottom: 50px;
+        }
+    }
+    .sidebar {
+        left: 0;
+        bottom: 0;
+        width: 40%;
+        height: 100vh;
+        position: fixed;
+        background-color: var(--primary);
+        .social-links {
+            right: 0;
+            bottom: 0;
+            color: var(--primary);
+            display: inline;
+            position: absolute;
+            padding-left: 30px;
+            padding-right: 15px;
+            background-color: var(--base-0);
+            p {
+                float: right;
+                color: var(--primary);
+                font-size: 14px;
+                line-height: 50px;
+                white-space: nowrap;
+                padding-right: 45px;
+                margin-bottom: 0;
+            }
+            ul {
+                float: right;
+                height: 50px;
+                list-style: none;
+                padding-left: 0;
+                padding-right: 15px;
+                margin: 0;
+                li {
+                    margin-left: 15px;
+                    display: inline-block;
+                    a {
+                        display: block;
+                        font-size: 14px;
+                        line-height: 50px;
+                    }
+                    &:hover {
+                        color: var(--base-1);
+                    }
+                }
+            }
+            &:before {
+                right: 0;
+                bottom: 0;
+                width: 4px;
+                height: 100px;
+                content: "";
+                position: absolute;
+                background-color: var(--primary);
+            }
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .section-contact-1 {
+        .sidebar {
+            width: 100%;
+            height: 300px;
+            position: relative;
+        }
+        .content {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .section-contact-1 {
+        .content {
+            padding: 0;
+        }
+    }
+}
