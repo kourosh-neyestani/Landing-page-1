@@ -12,10 +12,16 @@ function Header() {
         <>
             <header className="app-header">
                 <div className="header-logo">
-                    <Link to={`/home-1`}>Mitra</Link>
+                    <Link to={`/home-1`}>NUXT</Link>
                 </div>
                 <Link to={`/home-1`}>
-                    <button type="button" className="button button-menu button-open-sidenav" onClick={() => setDisplaySidenav(true)}>
+                    <button
+                        type="button"
+                        className="button button-menu button-open-sidenav"
+                        onClick={() => {
+                            setDisplaySidenav(true);
+                        }}
+                    >
                         <span></span>
                     </button>
                 </Link>
@@ -48,7 +54,7 @@ function Sidenav(props) {
         <div className={`app-sidenav ${displaySidenav && "active"}`}>
             <div className="sidenav-menu">
                 <div className="logo">
-                    <Link to={`/home-1`}>Mitra</Link>
+                    <Link to={`/home-1`}>NUXT</Link>
                 </div>
                 <button className="button button-close-sidenav" onClick={() => setDisplaySidenav(false)}></button>
                 <ul className="sidenav-nav">
