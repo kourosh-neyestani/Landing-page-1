@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, useParams, useRouteMatch } from "react-router-dom";
+import { Switch, Route, useRouteMatch } from "react-router-dom";
 
 // Components
 import Header from "../../components/header/Header";
@@ -11,26 +11,6 @@ import Intro from "./Intro";
 import Service from "./Service";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
-
-function Home() {
-    let { path } = useRouteMatch();
-
-    return (
-        <div>
-            <Header />
-            <Switch>
-                <Route exact path={path}>
-                    <Intro />
-                </Route>
-                {routes.map((item, index) => (
-                    <Route exact path={`${path}/${item.link}`} key={index}>
-                        {item.component}
-                    </Route>
-                ))}
-            </Switch>
-        </div>
-    );
-}
 
 const routes = [
     {
@@ -64,5 +44,25 @@ const routes = [
         component: <Contact />,
     },
 ];
+
+function Home() {
+    let { path } = useRouteMatch();
+
+    return (
+        <div>
+            <Header />
+            <Switch>
+                <Route exact path={path}>
+                    <Intro />
+                </Route>
+                {routes.map((item, index) => (
+                    <Route exact path={`${path}/${item.link}`} key={index}>
+                        {item.component}
+                    </Route>
+                ))}
+            </Switch>
+        </div>
+    );
+}
 
 export default Home;
