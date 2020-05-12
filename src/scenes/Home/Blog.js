@@ -69,7 +69,7 @@ function Blog() {
         <section class="section section-blog section-blog-1">
             <div class="display-screen">
                 <Container>
-                    <Slider className="el-slider" {...sliderSettings}>
+                    <Slider className="el-slider el-slider-plr--15" {...sliderSettings}>
                         {posts.map((item, index) => (
                             <div key={index} class="post-item">
                                 <Link to={item.link}>

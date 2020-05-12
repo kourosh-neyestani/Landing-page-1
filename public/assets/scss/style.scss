@@ -94,6 +94,15 @@
     --base-0: #151812;
     --base-1: #fff;
 }
+.el-slider-plr--15 {
+    padding-left: -15px;
+    padding-right: -15px;
+
+    .slick-slide {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 
 @import "default/variables";
 @import "default/mixins";
