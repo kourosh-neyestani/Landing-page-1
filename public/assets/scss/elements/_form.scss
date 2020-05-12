@@ -2,122 +2,222 @@
 Forms
 ------------------------------------*/
 .form {
-    select,
-    textarea,
-    input[type="tel"],
-    input[type="text"],
-    input[type="date"],
-    input[type="email"],
-    input[type="number"],
-    input[type="search"],
+    select {
+        width: 100%;
+        display: block;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    textarea {
+        width: 100%;
+        display: block;
+        font-size: 14px;
+        line-height: 1.5;
+        min-height: 180px;
+    }
+    input[type="tel"] {
+        width: 100%;
+        display: block;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    input[type="text"] {
+        width: 100%;
+        display: block;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    input[type="date"] {
+        width: 100%;
+        display: block;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    input[type="email"] {
+        width: 100%;
+        display: block;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    input[type="number"] {
+        width: 100%;
+        display: block;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    input[type="search"] {
+        width: 100%;
+        display: block;
+        font-size: 14px;
+        line-height: 1.5;
+    }
     input[type="password"] {
         width: 100%;
         display: block;
         font-size: 14px;
         line-height: 1.5;
     }
-    textarea,
     select[multiple] {
         min-height: 180px;
     }
 }
-
-/* 
-* Form - Style 1
-*/
 .form-1 {
     .row {
         margin-left: -12px;
         margin-right: -12px;
+        > * {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
     }
-    .row > * {
-        padding-left: 12px;
-        padding-right: 12px;
+    .button-block {
+        height: 50px;
+        font-size: 14px;
+        line-height: 50px;
     }
-    label {
-        top: 7px;
-        right: 10px;
-        color: $base-0;
-        font-size: 12px;
-        font-weight: 600;
-        letter-spacing: -0.02em;
-        display: inline-block;
-        position: absolute;
-        margin-bottom: 9px;
-        padding: 0 6px;
-        background-color: $primary;
-        transition: all 0.2s;
-    }
-    select,
-    textarea,
-    input[type="tel"],
-    input[type="text"],
-    input[type="date"],
-    input[type="email"],
-    input[type="number"],
-    input[type="search"],
-    input[type="password"] {
+    select {
         width: 100%;
-        height: 45px;
-        color: $base-0;
+        height: 50px;
+        color: var(--base-1);
         display: block;
         font-size: 12px;
-        padding: 10px 10px 0;
+        padding: 0 20px;
         outline: 0;
-        border: 1px solid $base-0;
-        background-color: $primary;
+        border: 1px solid var(--base-1);
+        background-color: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        &:focus {
+            border-color: var(--primary);
+        }
+    }
+    textarea {
+        width: 100%;
+        height: 50px;
+        color: var(--base-1);
+        display: block;
+        font-size: 12px;
+        padding: 0 20px;
+        outline: 0;
+        border: 1px solid var(--base-1);
+        background-color: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding-top: 15px;
+        &:focus {
+            border-color: var(--primary);
+        }
+    }
+    input[type="tel"] {
+        width: 100%;
+        height: 50px;
+        color: var(--base-1);
+        display: block;
+        font-size: 12px;
+        padding: 0 20px;
+        outline: 0;
+        border: 1px solid var(--base-1);
+        background-color: transparent;
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
     }
-    textarea {
-        padding-top: 15px;
+    input[type="text"] {
+        width: 100%;
+        height: 50px;
+        color: var(--base-1);
+        display: block;
+        font-size: 12px;
+        padding: 0 20px;
+        outline: 0;
+        border: 1px solid var(--base-1);
+        background-color: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    input[type="date"] {
+        width: 100%;
+        height: 50px;
+        color: var(--base-1);
+        display: block;
+        font-size: 12px;
+        padding: 0 20px;
+        outline: 0;
+        border: 1px solid var(--base-1);
+        background-color: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    input[type="email"] {
+        width: 100%;
+        height: 50px;
+        color: var(--base-1);
+        display: block;
+        font-size: 12px;
+        padding: 0 20px;
+        outline: 0;
+        border: 1px solid var(--base-1);
+        background-color: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    input[type="number"] {
+        width: 100%;
+        height: 50px;
+        color: var(--base-1);
+        display: block;
+        font-size: 12px;
+        padding: 0 20px;
+        outline: 0;
+        border: 1px solid var(--base-1);
+        background-color: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    input[type="search"] {
+        width: 100%;
+        height: 50px;
+        color: var(--base-1);
+        display: block;
+        font-size: 12px;
+        padding: 0 20px;
+        outline: 0;
+        border: 1px solid var(--base-1);
+        background-color: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    input[type="password"] {
+        width: 100%;
+        height: 50px;
+        color: var(--base-1);
+        display: block;
+        font-size: 12px;
+        padding: 0 20px;
+        outline: 0;
+        border: 1px solid var(--base-1);
+        background-color: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
     }
     .form-item {
         position: relative;
         margin-bottom: 24px;
     }
-}
-
-/* 
-* Form - 2
-*/
-.form-2 {
-    margin-bottom: -18px;
-    
-    select,
-    textarea,
-    input[type="tel"],
-    input[type="text"],
-    input[type="date"],
-    input[type="email"],
-    input[type="number"],
-    input[type="search"],
-    input[type="password"] {
-        width: 100%;
-        height: 45px;
-        color: $base-1;
-        display: block;
-        font-size: 12px;
-        padding: 0 15px;
-        outline: 0;
-        border: 1px solid $base-0;
-        background-color: $base-0;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        border-radius: 3px;
-        margin: 0;
+    input {
+        &:focus {
+            border-color: var(--primary);
+        }
     }
-
-    textarea {
-        padding-top: 12px;
-    }
-    .form-item {
-        position: relative;
-        margin-bottom: 18px;
-    }
-    .form-item-input {
-        height: 45px;
+    &::placeholder {
+        color: var(--base-1);
     }
 }

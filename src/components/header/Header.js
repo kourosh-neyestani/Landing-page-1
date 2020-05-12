@@ -6,8 +6,6 @@ function Header() {
     let { url } = useRouteMatch();
     const [displaySidenav, setDisplaySidenav] = useState(false);
 
-    console.log(url);
-
     return (
         <>
             <header className="app-header">
@@ -15,13 +13,7 @@ function Header() {
                     <Link to={`/home-1`}>NUXT</Link>
                 </div>
                 <Link to={`/home-1`}>
-                    <button
-                        type="button"
-                        className="button button-menu button-open-sidenav"
-                        onClick={() => {
-                            setDisplaySidenav(true);
-                        }}
-                    >
+                    <button className="button button-menu" onClick={() => setDisplaySidenav(true)}>
                         <span></span>
                     </button>
                 </Link>
@@ -29,7 +21,7 @@ function Header() {
                     {menuItems.map((item, index) => (
                         <li key={index}>
                             <NavLink to={`${url}/${item.link}`} activeClassName="active">
-                                <span className="count">{index + 1}</span>
+                                <span className="count">0{index + 1}</span>
                                 <span className="anchor">{item.title}</span>
                             </NavLink>
                         </li>
@@ -56,7 +48,7 @@ function Sidenav(props) {
                 <div className="logo">
                     <Link to={`/home-1`}>NUXT</Link>
                 </div>
-                <button className="button button-close-sidenav" onClick={() => setDisplaySidenav(false)}></button>
+                <button className="button" onClick={() => setDisplaySidenav(false)}></button>
                 <ul className="sidenav-nav">
                     {menuItems.map((item, index) => (
                         <li key={index}>
