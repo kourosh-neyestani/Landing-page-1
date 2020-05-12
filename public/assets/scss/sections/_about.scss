@@ -2,87 +2,83 @@
     Section: About
 ------------------------------------*/
 
-.section-about {
-    overflow: hidden;
-    position: relative;
-}
-
-// About 3
-.section-about-3 {
-    
-}
-
-// About 6
-.section-about-6 {
-    .el-heading {
-        margin-bottom: 25px;
+.section-about-1 {
+    .bg-color {
+        background-color: var(--base-0);
     }
-    .about-us-box {
-        height: 100%;
+    .my-avatar {
+        width: 100px;
+        height: 100px;
         overflow: hidden;
-        text-align: center;
-        padding: 30px;
-        @include overlay("pattern");
-
-        .image {
-            z-index: 3;
-            height: 100%;
-            @extend .display-center;
-            @include overlay("image");
-        }
-        .shape-1,
-        .shape-2 {
-            width: 60%;
-            opacity: 0.6;
-            padding-top: 30%;
-            position: absolute;
-        }
-        .shape-1 {
-            top: 0;
-            left: 0;
-            border-top: 3px solid;
-            border-left: 3px solid;
-            border-color: $primary;
-        }
-        .shape-2 {
-            right: 0;
-            bottom: 0;
-            border-right: 3px solid;
-            border-bottom: 3px solid;
-            border-color: $primary;
-        }
-        .shape-3 {
-            top: 54%;
-            right: 0;
-            z-index: 15;
-            color: $white;
+        border-radius: 50%;
+        margin-bottom: 30px;
+        border-left: 3px solid var(--primary);
+        border-bottom: 3px solid var(--primary);
+    }
+    .my-resume {
+        top: 0;
+        position: relative;
+        padding-bottom: 100px;
+        audio {
+            width: 100%;
+            height: 36px;
             display: block;
-            font-size: 16px;
-            font-weight: 600;
-            text-align: left;
+        }
+        &:before {
+            top: -100px !important;
+            bottom: 200px !important;
+        }
+        &:after {
+            top: 100px;
+            bottom: 0;
+            width: 50%;
+            content: "";
+            opacity: 0.1;
             position: absolute;
-            padding: 30px 30px 45px;
-            background-color: $primary;
-
-            span {
-                display: block;
-                font-size: 45px;
-                padding: 0;
-            }
-            &:after {
-                right: 8px;
-                bottom: -21px;
-                content: "";
-                opacity: 0.45;
-                display: block;
-                position: absolute;
-                border: 22px solid transparent;
-                border-bottom-color: $primary;
-                transform: rotate(-45deg);
+        }
+    }
+    .section-title-1 {
+        padding: 0 15px;
+    }
+    .section-podcasts {
+        padding-bottom: 100px;
+    }
+}
+@media (max-width: 1200px) {
+    .section-about-1 {
+        .my-resume {
+            &:before {
+                display: none;
             }
         }
     }
-    .el-progress:last-child {
-        margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+    .section-about-1 {
+        .section-title-1 {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        .my-resume {
+            .container {
+                padding: 0 15px;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .section-about-1 {
+        .my-resume {
+            top: -30px;
+        }
+    }
+    .section-resume-1 {
+        .box {
+            .inner {
+                padding-left: 15px !important;
+                padding-right: 0 !important;
+                padding-bottom: 0 !important;
+            }
+        }
     }
 }
