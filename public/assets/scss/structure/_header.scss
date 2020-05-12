@@ -3,7 +3,7 @@
 ------------------------------------*/
 
 .app-header {
-    color: var(--base-1);
+    color: $base-1;
 }
 .app-header:after {
     top: 0;
@@ -14,7 +14,7 @@
     opacity: 0.6;
     content: "";
     position: absolute;
-    background: linear-gradient(180deg, var(--base-0) 0%, transparent 100%);
+    background: linear-gradient(180deg, $base-0 0%, transparent 100%);
 }
 /*
 * Header Logo
@@ -67,7 +67,7 @@
     content: "";
     position: absolute;
     border-radius: 50%;
-    border: 1px solid var(--base-1);
+    border: 1px solid $base-1;
 }
 .app-header .header-nav li:hover .count,
 .app-header .header-nav li .active .count {
@@ -79,9 +79,9 @@
 }
 .app-header .header-nav li .active,
 .app-header .header-nav li .active:before {
-    color: var(--primary);
-    border-color: var(--primary);
-    background-color: var(--primary);
+    color: $primary;
+    border-color: $primary;
+    background-color: $primary;
 }
 /*
 * Header Button
@@ -104,7 +104,7 @@
     z-index: 3;
     display: block;
     position: relative;
-    background-color: var(--base-1);
+    background-color: $base-1;
 }
 .app-header .button-menu span:before {
     top: -12px;
@@ -161,7 +161,7 @@
 * Header Button
 */
 .app-header {
-    color: var(--base-1);
+    color: $base-1;
     &:after {
         top: 0;
         left: 0;
@@ -171,7 +171,7 @@
         opacity: 0.6;
         content: "";
         position: absolute;
-        background: linear-gradient(180deg, var(--base-0) 0%, transparent 100%);
+        background: linear-gradient(180deg, $base-0 0%, transparent 100%);
     }
     .header-logo {
         top: 30px;
@@ -216,7 +216,7 @@
                 content: "";
                 position: absolute;
                 border-radius: 50%;
-                border: 1px solid var(--base-1);
+                border: 1px solid $base-1;
             }
             &:hover {
                 .count {
@@ -235,13 +235,13 @@
                 .anchor {
                     display: block;
                 }
-                color: var(--primary);
-                border-color: var(--primary);
-                background-color: var(--primary);
+                color: $primary;
+                border-color: $primary;
+                background-color: $primary;
                 &:before {
-                    color: var(--primary);
-                    border-color: var(--primary);
-                    background-color: var(--primary);
+                    color: $primary;
+                    border-color: $primary;
+                    background-color: $primary;
                 }
             }
         }
@@ -261,7 +261,7 @@
             z-index: 3;
             display: block;
             position: relative;
-            background-color: var(--base-1);
+            background-color: $base-1;
             &:before {
                 width: 36px;
                 height: 2px;
@@ -269,7 +269,7 @@
                 z-index: 3;
                 display: block;
                 position: relative;
-                background-color: var(--base-1);
+                background-color: $base-1;
                 top: -12px;
                 width: 30px;
                 content: "";
@@ -281,7 +281,7 @@
                 z-index: 3;
                 display: block;
                 position: relative;
-                background-color: var(--base-1);
+                background-color: $base-1;
                 width: 30px;
                 bottom: -10px;
                 content: "";

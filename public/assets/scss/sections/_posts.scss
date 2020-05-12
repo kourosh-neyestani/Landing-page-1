@@ -3,7 +3,7 @@
 ------------------------------------*/
 
 .section-blog-1 {
-    background-color: var(--base-0);
+    background-color: $base-0;
     .post-item {
         overflow: hidden;
         position: relative;
@@ -19,7 +19,7 @@
             content: "";
             position: absolute;
             border-radius: 3px;
-            border: 1px solid var(--base-1);
+            border: 1px solid $base-1;
             background-color: transparent;
         }
         .post-image {
@@ -27,7 +27,7 @@
             position: relative;
             padding-top: 60%;
             margin-bottom: 20px;
-            background: no-repeat var(--primary) center center / cover;
+            background: no-repeat $primary center center / cover;
             img {
                 top: 0;
                 left: 0;
@@ -51,7 +51,7 @@
             margin-bottom: 20px;
             .post-date {
                 font-size: 12px;
-                color: var(--base-1);
+                color: $base-1;
                 i {
                     margin-right: 6px;
                     display: inline-block;

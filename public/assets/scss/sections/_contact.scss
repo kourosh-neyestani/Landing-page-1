@@ -9,7 +9,7 @@ Contact
         width: 60%;
         float: right;
         padding: 0 50px;
-        background-color: var(--base-0);
+        background-color: $base-0;
         .form {
             padding-bottom: 50px;
         }
@@ -20,19 +20,19 @@ Contact
         width: 40%;
         height: 100vh;
         position: fixed;
-        background-color: var(--primary);
+        background-color: $primary;
         .social-links {
             right: 0;
             bottom: 0;
-            color: var(--primary);
+            color: $primary;
             display: inline;
             position: absolute;
             padding-left: 30px;
             padding-right: 15px;
-            background-color: var(--base-0);
+            background-color: $base-0;
             p {
                 float: right;
-                color: var(--primary);
+                color: $primary;
                 font-size: 14px;
                 line-height: 50px;
                 white-space: nowrap;
@@ -55,7 +55,7 @@ Contact
                         line-height: 50px;
                     }
                     &:hover {
-                        color: var(--base-1);
+                        color: $base-1;
                     }
                 }
             }
@@ -66,7 +66,7 @@ Contact
                 height: 100px;
                 content: "";
                 position: absolute;
-                background-color: var(--primary);
+                background-color: $primary;
             }
         }
     }

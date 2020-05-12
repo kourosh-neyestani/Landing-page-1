@@ -6,7 +6,7 @@
     max-height: 100vh !important;
 
     .el-slider {
-        background: linear-gradient(180deg, transparent 27%, var(--base-0) 87%);
+        background: linear-gradient(180deg, transparent 27%, $base-0 87%);
     }
     .box {
         width: 100%;
@@ -28,7 +28,7 @@
             position: absolute;
             width: 1px;
             opacity: 0.3;
-            background-image: linear-gradient(180deg, transparent 0%, var(--base-1) 100%);
+            background-image: linear-gradient(180deg, transparent 0%, $base-1 100%);
         }
         &:after {
             top: 0;
@@ -38,7 +38,7 @@
             position: absolute;
             width: 100%;
             opacity: 0;
-            background-color: var(--primary);
+            background-color: $primary;
             transition: all 600ms;
         }
         &:hover {
@@ -103,20 +103,20 @@
                 font-weight: 100;
                 position: absolute;
                 border-radius: 50%;
-                background-color: var(--primary);
+                background-color: $primary;
             }
         }
     }
     .owl-carousel {
-        background: linear-gradient(180deg, transparent 27%, var(--base-0) 87%);
+        background: linear-gradient(180deg, transparent 27%, $base-0 87%);
         .owl-prev {
             bottom: 0;
             width: 50%;
             height: 60px;
             opacity: 0;
             display: block;
-            border-right: 1px solid var(--base-0) !important;
-            background-color: var(--primary) !important;
+            border-right: 1px solid $base-0 !important;
+            background-color: $primary !important;
             position: absolute;
             left: 0;
         }
@@ -126,8 +126,8 @@
             height: 60px;
             opacity: 0;
             display: block;
-            border-right: 1px solid var(--base-0) !important;
-            background-color: var(--primary) !important;
+            border-right: 1px solid $base-0 !important;
+            background-color: $primary !important;
             position: absolute;
             right: 0;
         }

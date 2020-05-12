@@ -17,12 +17,12 @@
     }
 }
 .section-portfolio-1 {
-    background-color: var(--base-0);
+    background-color: $base-0;
     .portfolio-item {
         overflow: hidden;
         position: relative;
         margin-bottom: 30px;
-        background-color: var(--primary);
+        background-color: $primary;
         p {
             white-space: nowrap;
             margin-bottom: 6px;

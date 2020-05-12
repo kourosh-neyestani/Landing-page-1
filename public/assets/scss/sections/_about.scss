@@ -4,7 +4,7 @@
 
 .section-about-1 {
     .bg-color {
-        background-color: var(--base-0);
+        background-color: $base-0;
     }
     .my-avatar {
         width: 100px;
@@ -12,8 +12,8 @@
         overflow: hidden;
         border-radius: 50%;
         margin-bottom: 30px;
-        border-left: 3px solid var(--primary);
-        border-bottom: 3px solid var(--primary);
+        border-left: 3px solid $primary;
+        border-bottom: 3px solid $primary;
     }
     .my-resume {
         top: 0;
@@ -45,7 +45,7 @@
     }
 }
 .section-resume-1 {
-    color: var(--base-1);
+    color: $base-1;
     &:before {
         top: 0;
         right: 0;
@@ -53,12 +53,12 @@
         width: 50%;
         content: "";
         position: absolute;
-        background-color: var(--primary);
+        background-color: $primary;
     }
     .box {
         z-index: 3;
         position: relative;
-        background-color: var(--base-1);
+        background-color: $base-1;
         .inner {
             padding: 45px;
         }
@@ -212,37 +212,37 @@
     }
     .resume-dark {
         p {
-            color: var(--base-1);
+            color: $base-1;
         }
         h4 {
-            color: var(--base-1);
+            color: $base-1;
             &:before {
                 opacity: 0.2;
-                background-color: var(--base-0);
+                background-color: $base-0;
             }
         }
         h5 {
-            color: var(--base-1);
+            color: $base-1;
         }
         h6 {
-            color: var(--base-1);
+            color: $base-1;
         }
         ul {
             li {
                 &:before {
-                    background-color: var(--base-1);
+                    background-color: $base-1;
                 }
             }
         }
         .resume-item {
             &:before {
-                background-color: var(--base-1);
+                background-color: $base-1;
             }
         }
         .resume-icon {
             &:after {
                 opacity: 0.2;
-                background-color: var(--base-0);
+                background-color: $base-0;
             }
         }
         .resume-history {
@@ -250,7 +250,7 @@
                 .resume-dark {
                     .resume-icon {
                         &:after {
-                            background-color: var(--primary);
+                            background-color: $primary;
                         }
                     }
                 }
@@ -259,40 +259,40 @@
     }
     .resume-light {
         p {
-            color: var(--base-0);
+            color: $base-0;
         }
         h4 {
-            color: var(--base-0);
+            color: $base-0;
             &:before {
                 opacity: 0.75;
-                background-color: var(--primary);
+                background-color: $primary;
             }
         }
         h5 {
-            color: var(--base-0);
+            color: $base-0;
         }
         h6 {
-            color: var(--base-0);
+            color: $base-0;
         }
         .resume-icon {
             &:before {
-                color: var(--base-0);
+                color: $base-0;
             }
             &:after {
                 opacity: 0.75;
-                background-color: var(--primary);
+                background-color: $primary;
             }
         }
         ul {
             li {
                 &:before {
-                    background-color: var(--base-0);
+                    background-color: $base-0;
                 }
             }
         }
         .resume-item {
             &:before {
-                background-color: var(--base-0);
+                background-color: $base-0;
             }
         }
         .resume-history {
@@ -300,7 +300,7 @@
                 .resume-light {
                     .resume-icon {
                         &:after {
-                            background-color: var(--primary);
+                            background-color: $primary;
                         }
                     }
                 }
@@ -308,23 +308,23 @@
         }
     }
     .divider-1-2 {
-        background-color: var(--base-1);
+        background-color: $base-1;
         &:before {
-            background-color: var(--base-1);
+            background-color: $base-1;
         }
     }
     .section-title-2 {
         h2 {
             &:after {
                 opacity: 1;
-                background-color: var(--primary-1);
+                background-color: $primary-1;
             }
         }
     }
 }
 .section-resume {
     .display-screen {
-        background-color: var(--base-0);
+        background-color: $base-0;
     }
 }
 @media (max-width: 1200px) {
