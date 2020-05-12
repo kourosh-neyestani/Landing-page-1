@@ -2,51 +2,151 @@
     Section: Service
 ------------------------------------*/
 
-.section-service {
-    .card-item {
-        position: relative;
+.section-service-1 {
+    max-height: 100vh !important;
 
-        p {
-            color: $text-color;
-            font-size: 0.9em;
-            margin: 0;
+    .el-slider {
+        background: linear-gradient(180deg, transparent 27%, var(--base-0) 87%);
+    }
+    .box {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        .inner {
+            left: 0;
+            right: 0;
+            bottom: 45px;
+            padding: 0 30px;
+            position: absolute;
         }
-        .button {
+        &:before {
+            top: 0;
+            right: 0;
+            height: 100%;
+            content: "";
+            position: absolute;
+            width: 1px;
+            opacity: 0.3;
+            background-image: linear-gradient(180deg, transparent 0%, var(--base-1) 100%);
+        }
+        &:after {
+            top: 0;
+            right: 0;
+            height: 100%;
+            content: "";
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            background-color: var(--primary);
+            transition: all 600ms;
+        }
+        &:hover {
+            &:after {
+                opacity: 0.1;
+            }
+        }
+    }
+    .service-item {
+        z-index: 3;
+        position: relative;
+        p {
+            opacity: 0.6;
+            font-size: 12px;
+            font-weight: 300;
+            padding-left: 10px;
+            margin-bottom: 0;
+        }
+        h3 {
+            font-size: 16px;
+        }
+        .count {
+            opacity: 0.6;
+            font-size: 12px;
             margin-bottom: 15px;
         }
+        &:before {
+            top: 43px;
+            left: 0;
+            width: 30px;
+            height: 1px;
+            content: "";
+            position: absolute;
+        }
+        .service-head {
+            position: relative;
+            padding: 25px 25px 0 75px;
+        }
+        .service-icon {
+            top: 12px;
+            left: 9px;
+            width: 36px;
+            height: 36px;
+            display: block;
+            text-align: center;
+            position: absolute;
+            &:before {
+                top: 18px;
+                left: 10px;
+                z-index: 3;
+                font-size: 30px;
+                font-weight: 100;
+                line-height: 36px;
+                position: relative;
+            }
+            &:after {
+                top: 15px;
+                left: 0;
+                width: 36px;
+                height: 36px;
+                content: "";
+                font-weight: 100;
+                position: absolute;
+                border-radius: 50%;
+                background-color: var(--primary);
+            }
+        }
     }
-}
-// Service 1
-.section-service-1 {
-    .card-item {
-        margin-bottom: 45px;
-
-        h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
+    .owl-carousel {
+        background: linear-gradient(180deg, transparent 27%, var(--base-0) 87%);
+        .owl-prev {
+            bottom: 0;
+            width: 50%;
+            height: 60px;
+            opacity: 0;
+            display: block;
+            border-right: 1px solid var(--base-0) !important;
+            background-color: var(--primary) !important;
+            position: absolute;
+            left: 0;
+        }
+        .owl-next {
+            bottom: 0;
+            width: 50%;
+            height: 60px;
+            opacity: 0;
+            display: block;
+            border-right: 1px solid var(--base-0) !important;
+            background-color: var(--primary) !important;
+            position: absolute;
+            right: 0;
         }
     }
 }
-
-// Service 2 & 3
-.section-service-2,
-.section-service-3 {
-    position: relative;
-
-    .column {
-        position: relative;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .card-item {
-        padding: 30px;
-        margin-bottom: 30px;
-        background-color: $white;
-        @extend .shadow-3;
-
-        h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
+@media (max-width: 720px) {
+    .section-service-1 {
+        .box {
+            .inner {
+                bottom: 100px;
+            }
+        }
+        .owl-carousel {
+            .owl-prev {
+                opacity: 1;
+            }
+            .owl-next {
+                opacity: 1;
+            }
         }
     }
 }
