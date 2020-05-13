@@ -69,7 +69,8 @@ function Blog() {
     };
 
     return (
-        <section className="section section-blog section-blog-1">
+        <section className="section section-blog section-blog-1 bg-gradient-side overlay-color">
+            <span className="bg-color bg-dark-60"></span>
             <div className="display-spacing">
                 <Container>
                     <Headline label="Blog" title="Latest Blog Posts/News" divider_1={true} position="center"/>

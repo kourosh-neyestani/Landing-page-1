@@ -8,7 +8,8 @@ import Headline from "../../components/common/Headline";
 
 function Contact() {
     return (
-        <section className="section section-contact section-contact-1">
+        <section className="section section-contact section-contact-1 bg-gradient-side overlay-color">
+            <span class="bg-color bg-dark-60"></span>
             <div className="sidebar overlay-image" style={{ backgroundImage: `url(/assets/images/contact/1.jpg)` }}>
                 <div className="social-links">
                     <ul>
