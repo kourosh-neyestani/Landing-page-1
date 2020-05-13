@@ -3,6 +3,9 @@ import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import { Container } from "react-grid-system";
 
+// Components
+import Headline from "../../components/common/Headline";
+
 const posts = [
     {
         title: "What has happened to all of the Design ideas?",
@@ -66,24 +69,25 @@ function Blog() {
     };
 
     return (
-        <section class="section section-blog section-blog-1">
-            <div class="display-screen">
+        <section className="section section-blog section-blog-1">
+            <div className="display-spacing">
                 <Container>
+                    <Headline label="Blog" title="Latest Blog Posts/News" divider_1={true} position="center"/>
                     <Slider className="el-slider el-slider-plr--15" {...sliderSettings}>
                         {posts.map((item, index) => (
-                            <div key={index} class="post-item">
+                            <div key={index} className="post-item">
                                 <Link to={item.link}>
-                                    <div class="post-image bg-primary">
+                                    <div className="post-image bg-primary">
                                         <img src={item.image} alt={item.title} />
                                     </div>
                                 </Link>
-                                <div class="post-content">
-                                    <div class="post-data">
-                                        <h4 class="post-title">
+                                <div className="post-content">
+                                    <div className="post-data">
+                                        <h4 className="post-title">
                                             <Link to={item.link}>{item.title}</Link>
                                         </h4>
-                                        <div class="post-date">
-                                            <i class="ti-time"></i>
+                                        <div className="post-date">
+                                            <i className="ti-time"></i>
                                             {item.date}
                                         </div>
                                     </div>

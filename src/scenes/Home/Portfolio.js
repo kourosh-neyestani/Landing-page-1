@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-grid-system";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
+// Components
+import Headline from "../../components/common/Headline";
+
 const portfolio = [
     {
         name: "Web Design",
@@ -108,42 +111,38 @@ const portfolio = [
 function Portfolio() {
     return (
         <section className="section section-portfolio section-portfolio-1">
-            <div className="display-spacing bg-gradient-side">
-                <span className="bg-color bg-dark-60"></span>
-                <div className="display-screen">
-                    <div className="section-title-2">
-                        <Container>
-                            <Tabs className="el-tabs el-tabs-1" selectedTabClassName="active">
-                                <TabList className="el-tabs-links">
-                                    {portfolio.map((category, categoryIndex) => (
-                                        <Tab key={categoryIndex}>{category.name}</Tab>
-                                    ))}
-                                </TabList>
-                                {portfolio.map((category, categoryIndex) => (
-                                    <TabPanel key={categoryIndex}>
-                                        <Row className="mb--30">
-                                            {category.items.map((item, index) => (
-                                                <Col key={index} xs={6} sm={6} md={4} lg={3} xl={3}>
-                                                    <div className="portfolio-item">
-                                                        <div className="portfolio-card">
-                                                            <div className="portfolio-image overlay-image" style={{ backgroundImage: `url(${item.image})` }} />
-                                                            <div className="content">
-                                                                <Link to={item.link}>
-                                                                    <span>{item.title}</span>
-                                                                    <h3>{item.subtitle}</h3>
-                                                                </Link>
-                                                            </div>
-                                                        </div>
+            <div className="display-spacing">
+                <Container>
+                    <Headline label="Portfolio" title="Let's See Our portfolio" divider_1={true} position="center" />
+                    <Tabs className="el-tabs el-tabs-1" selectedTabClassName="active">
+                        <TabList className="el-tabs-links">
+                            {portfolio.map((category, categoryIndex) => (
+                                <Tab key={categoryIndex}>{category.name}</Tab>
+                            ))}
+                        </TabList>
+                        {portfolio.map((category, categoryIndex) => (
+                            <TabPanel key={categoryIndex}>
+                                <Row className="mb--30">
+                                    {category.items.map((item, index) => (
+                                        <Col key={index} xs={6} sm={6} md={4} lg={3} xl={3}>
+                                            <div className="portfolio-item">
+                                                <div className="portfolio-card">
+                                                    <div className="portfolio-image overlay-image" style={{ backgroundImage: `url(${item.image})` }} />
+                                                    <div className="content">
+                                                        <Link to={item.link}>
+                                                            <span>{item.title}</span>
+                                                            <h3>{item.subtitle}</h3>
+                                                        </Link>
                                                     </div>
-                                                </Col>
-                                            ))}
-                                        </Row>
-                                    </TabPanel>
-                                ))}
-                            </Tabs>
-                        </Container>
-                    </div>
-                </div>
+                                                </div>
+                                            </div>
+                                        </Col>
+                                    ))}
+                                </Row>
+                            </TabPanel>
+                        ))}
+                    </Tabs>
+                </Container>
             </div>
         </section>
     );

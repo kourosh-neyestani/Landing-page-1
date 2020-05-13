@@ -94,20 +94,20 @@ function Service() {
     };
 
     return (
-        <section class="section section-service section-service-1">
-            <div class="display-full-screen">
+        <section className="section section-service section-service-1">
+            <div className="display-full-screen">
                 <div className="overlay-image" style={{ backgroundImage: `url(/assets/images/service/1.jpg)` }}>
                     <Slider className="el-slider" {...sliderSettings}>
                         {service.map((item, index) => (
-                            <div class="item box" key={index}>
-                                <div class="inner">
-                                    <div class="service-item">
-                                        <div class="service-head">
+                            <div className="item box" key={index}>
+                                <div className="inner">
+                                    <div className="service-item">
+                                        <div className="service-head">
                                             <Icon label={`0${index + 1}.`} title={item.title}>
                                                 {item.icon}
                                             </Icon>
                                         </div>
-                                        <div class="service-body">
+                                        <div className="service-body">
                                             <p>{item.subtitle}</p>
                                         </div>
                                     </div>

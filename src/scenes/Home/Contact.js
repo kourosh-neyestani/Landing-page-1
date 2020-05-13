@@ -4,54 +4,56 @@ import { IoIosBasket, IoIosBasketball, IoIosColorPalette, IoIosCode, IoIosDeskto
 
 // Components
 import Icon from "../../components/common/Icon";
+import Headline from "../../components/common/Headline";
 
 function Contact() {
     return (
-        <section class="section section-contact section-contact-1">
-            <div class="sidebar overlay-image" style={{ backgroundImage: `url(/assets/images/contact/1.jpg)` }}>
-                <div class="social-links">
+        <section className="section section-contact section-contact-1">
+            <div className="sidebar overlay-image" style={{ backgroundImage: `url(/assets/images/contact/1.jpg)` }}>
+                <div className="social-links">
                     <ul>
                         <li>
                             <a href="/#">
-                                <i class="fa fa-twitter"></i>
+                                <i className="fa fa-twitter"></i>
                             </a>
                         </li>
                         <li>
                             <a href="/#">
-                                <i class="fa fa-github"></i>
+                                <i className="fa fa-github"></i>
                             </a>
                         </li>
                         <li>
                             <a href="/#">
-                                <i class="fa fa-vimeo"></i>
+                                <i className="fa fa-vimeo"></i>
                             </a>
                         </li>
                     </ul>
                     <p>Follow Me:</p>
                 </div>
             </div>
-            <div class="content">
-                <div class="display-spacing">
+            <div className="content">
+                <div className="display-spacing">
                     <Container>
-                        <form class="form form-1">
+                        <Headline title="Get In Touch" divider_2={true} />
+                        <form className="form form-1">
                             <Row>
                                 <Col xs={12} sm={12} md={6}>
-                                    <div class="form-item">
+                                    <div className="form-item">
                                         <input type="text" placeholder="Your Name" />
                                     </div>
                                 </Col>
                                 <Col xs={12} sm={12} md={6}>
-                                    <div class="form-item">
+                                    <div className="form-item">
                                         <input type="email" placeholder="Your Email" />
                                     </div>
                                 </Col>
                                 <Col xs={12} sm={12} md={12}>
-                                    <div class="form-item">
+                                    <div className="form-item">
                                         <textarea placeholder="Your Message"></textarea>
                                     </div>
                                 </Col>
                                 <Col xs={12} sm={12} md={12}>
-                                    <button type="button" class="button button-block button-primary">
+                                    <button type="button" className="button button-block button-primary">
                                         Send Message
                                     </button>
                                 </Col>
