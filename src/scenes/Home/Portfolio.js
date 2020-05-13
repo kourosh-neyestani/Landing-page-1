@@ -8,7 +8,7 @@ import Headline from "../../components/common/Headline";
 
 const portfolio = [
     {
-        name: "Web Design",
+        name: "All Worls",
         items: [
             {
                 title: "Crearive Design",
@@ -33,16 +33,11 @@ const portfolio = [
             },
             {
                 title: "Crearive Design",
-                link: "/portfolio-details",
                 subtitle: "Web Design",
+                link: "/portfolio-details",
                 image: "/assets/images/portfolio/1-4.jpg",
                 thumbnail: "/assets/images/portfolio/1-4.jpg",
             },
-        ],
-    },
-    {
-        name: "Mobile Apps",
-        items: [
             {
                 title: "Crearive Design",
                 subtitle: "Web Design",
@@ -74,35 +69,80 @@ const portfolio = [
         ],
     },
     {
-        name: "Branding",
+        name: "Strength",
         items: [
+            {
+                title: "Crearive Design",
+                link: "/portfolio-details",
+                subtitle: "Web Design",
+                image: "/assets/images/portfolio/1-1.jpg",
+                thumbnail: "/assets/images/portfolio/1-1.jpg",
+            },
+            {
+                title: "Crearive Design",
+                link: "/portfolio-details",
+                subtitle: "Web Design",
+                image: "/assets/images/portfolio/1-2.jpg",
+                thumbnail: "/assets/images/portfolio/1-2.jpg",
+            },
+            {
+                title: "Crearive Design",
+                link: "/portfolio-details",
+                subtitle: "Web Design",
+                image: "/assets/images/portfolio/1-3.jpg",
+                thumbnail: "/assets/images/portfolio/1-3.jpg",
+            },
+        ],
+    },
+    {
+        name: "Endurance",
+        items: [
+            {
+                title: "Crearive Design",
+                subtitle: "Web Design",
+                link: "/portfolio-details",
+                image: "/assets/images/portfolio/1-4.jpg",
+                thumbnail: "/assets/images/portfolio/1-4.jpg",
+            },
+            {
+                title: "Crearive Design",
+                subtitle: "Web Design",
+                link: "/portfolio-details",
+                image: "/assets/images/portfolio/1-5.jpg",
+                thumbnail: "/assets/images/portfolio/1-5.jpg",
+            },
+            {
+                title: "Crearive Design",
+                subtitle: "Web Design",
+                link: "/portfolio-details",
+                image: "/assets/images/portfolio/1-6.jpg",
+                thumbnail: "/assets/images/portfolio/1-6.jpg",
+            },
+        ],
+    },
+    {
+        name: "Cardio",
+        items: [
+            {
+                title: "Crearive Design",
+                subtitle: "Web Design",
+                link: "/portfolio-details",
+                image: "/assets/images/portfolio/1-7.jpg",
+                thumbnail: "/assets/images/portfolio/1-7.jpg",
+            },
+            {
+                title: "Crearive Design",
+                subtitle: "Web Design",
+                link: "/portfolio-details",
+                image: "/assets/images/portfolio/1-8.jpg",
+                thumbnail: "/assets/images/portfolio/1-8.jpg",
+            },
             {
                 title: "Crearive Design",
                 subtitle: "Web Design",
                 link: "/portfolio-details",
                 image: "/assets/images/portfolio/1-9.jpg",
                 thumbnail: "/assets/images/portfolio/1-9.jpg",
-            },
-            {
-                title: "Crearive Design",
-                subtitle: "Web Design",
-                link: "/portfolio-details",
-                image: "/assets/images/portfolio/1-10.jpg",
-                thumbnail: "/assets/images/portfolio/1-10.jpg",
-            },
-            {
-                title: "Crearive Design",
-                subtitle: "Web Design",
-                link: "/portfolio-details",
-                image: "/assets/images/portfolio/1-11.jpg",
-                thumbnail: "/assets/images/portfolio/1-11.jpg",
-            },
-            {
-                title: "Crearive Design",
-                subtitle: "Web Design",
-                link: "/portfolio-details",
-                image: "/assets/images/portfolio/1-12.jpg",
-                thumbnail: "/assets/images/portfolio/1-12.jpg",
             },
         ],
     },
@@ -122,19 +162,19 @@ function Portfolio() {
                         </TabList>
                         {portfolio.map((category, categoryIndex) => (
                             <TabPanel key={categoryIndex}>
-                                <Row className="mb--30">
+                                <Row className="row-center mb--30">
                                     {category.items.map((item, index) => (
                                         <Col key={index} xs={6} sm={6} md={4} lg={3} xl={3}>
                                             <div className="portfolio-item">
-                                                <div className="portfolio-card">
-                                                    <div className="portfolio-image overlay-image" style={{ backgroundImage: `url(${item.image})` }} />
-                                                    <div className="content">
-                                                        <Link to={item.link}>
+                                                <Link to={item.link}>
+                                                    <div className="portfolio-card">
+                                                        <div className="image overlay-image" style={{ backgroundImage: `url(${item.image})` }} />
+                                                        <div className="content">
                                                             <span>{item.title}</span>
                                                             <h3>{item.subtitle}</h3>
-                                                        </Link>
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </Link>
                                             </div>
                                         </Col>
                                     ))}
