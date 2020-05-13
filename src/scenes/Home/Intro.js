@@ -21,7 +21,7 @@ function Intro() {
             <div className="hero-sidebar">
                 <div className="display-center">
                     <div className="content">
-                        <h1>BUILD YOUR BODY STRONG YOUR BODY</h1>
+                        <h1>BUILD YOUR BODY STRONG</h1>
                         <p>Lorem ipsum dolor sit amet consec tetur adipisicing elit.</p>
                         <Link to="/#">
                             <button className="button button-md button-light text-primary">About Me</button>

@@ -34,7 +34,7 @@ function Contact() {
             <div className="content">
                 <div className="display-spacing">
                     <Container>
-                        <Headline title="Get In Touch" divider_2={true} />
+                        <Headline title="Get In Touch" divider_2={true} subtitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua. Ut enim ad minim enim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
                         <form className="form form-1">
                             <Row>
                                 <Col xs={12} sm={12} md={6}>
