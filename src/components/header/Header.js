@@ -6,6 +6,11 @@ function Header() {
     let { url } = useRouteMatch();
     const [displaySidenav, setDisplaySidenav] = useState(false);
 
+    const handleClick = (event) => {
+        event.preventDefault();
+        setDisplaySidenav(true);
+    }
+
     return (
         <>
             <header className="app-header">
@@ -13,7 +18,7 @@ function Header() {
                     <Link to={`/home-1`}>NUXT</Link>
                 </div>
                 <Link to={`/home-1`}>
-                    <button className="button button-menu" onClick={() => setDisplaySidenav(true)}>
+                    <button className="button button-menu" onClick={(e) => handleClick}>
                         <span></span>
                     </button>
                 </Link>

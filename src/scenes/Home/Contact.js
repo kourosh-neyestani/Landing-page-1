@@ -1,5 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-grid-system";
+import { IoIosBasket, IoIosBasketball, IoIosColorPalette, IoIosCode, IoIosDesktop, IoIosCube, IoIosFlask, IoIosFitness, IoIosFingerPrint, IoIosHeartEmpty, IoIosMusicalNotes, IoIosRocket, IoMdPlanet, IoMdSchool, IoMdTv, IoMdWine } from "react-icons/io";
+
+// Components
+import Icon from "../../components/common/Icon";
 
 function Contact() {
     return (
@@ -55,25 +59,19 @@ function Contact() {
                         </form>
                         <Row>
                             <Col xs={12} sm={12} md={6} lg={4}>
-                                <div class="card-icon">
-                                    <span class="icon ti-mobile"></span>
-                                    <span class="title">PHONE</span>
-                                    <span class="subtitle">+123 456-789-000</span>
-                                </div>
+                                <Icon title="PHONE" subtitle="+123 456-789-000">
+                                    <IoIosDesktop />
+                                </Icon>
                             </Col>
                             <Col xs={12} sm={12} md={6} lg={4}>
-                                <div class="card-icon">
-                                    <span class="icon ti-email"></span>
-                                    <span class="title">EMAIL</span>
-                                    <span class="subtitle">Example@domain.com</span>
-                                </div>
+                                <Icon title="EMAIL" subtitle="Example@domain.com">
+                                    <IoIosDesktop />
+                                </Icon>
                             </Col>
                             <Col xs={12} sm={12} md={12} lg={4}>
-                                <div class="card-icon">
-                                    <span class="icon ti-direction"></span>
-                                    <span class="title">ADDRESS</span>
-                                    <span class="subtitle">California, USA</span>
-                                </div>
+                                <Icon title="ADDRESS" subtitle="California, USA">
+                                    <IoIosDesktop />
+                                </Icon>
                             </Col>
                         </Row>
                     </Container>

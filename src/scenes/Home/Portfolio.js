@@ -107,11 +107,11 @@ const portfolio = [
 
 function Portfolio() {
     return (
-        <section class="section section-portfolio section-portfolio-1">
-            <div class="display-spacing bg-gradient-side">
-                <span class="bg-color bg-dark-60"></span>
-                <div class="display-screen">
-                    <div class="section-title-2">
+        <section className="section section-portfolio section-portfolio-1">
+            <div className="display-spacing bg-gradient-side">
+                <span className="bg-color bg-dark-60"></span>
+                <div className="display-screen">
+                    <div className="section-title-2">
                         <Container>
                             <Tabs className="el-tabs el-tabs-1" selectedTabClassName="active">
                                 <TabList className="el-tabs-links">

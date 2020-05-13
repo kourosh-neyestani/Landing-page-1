@@ -75,61 +75,12 @@
         }
         .service-head {
             position: relative;
-            padding: 25px 25px 0 75px;
-        }
-        .service-icon {
-            top: 12px;
-            left: 9px;
-            width: 36px;
-            height: 36px;
-            display: block;
-            text-align: center;
-            position: absolute;
-            &:before {
-                top: 18px;
-                left: 10px;
-                z-index: 3;
-                font-size: 30px;
-                font-weight: 100;
-                line-height: 36px;
-                position: relative;
+
+            .el-icon {
+                left: 15px;
+                right: 15px;
+                margin-bottom: 15px;
             }
-            &:after {
-                top: 15px;
-                left: 0;
-                width: 36px;
-                height: 36px;
-                content: "";
-                font-weight: 100;
-                position: absolute;
-                border-radius: 50%;
-                background-color: $primary;
-            }
-        }
-    }
-    .owl-carousel {
-        background: linear-gradient(180deg, transparent 27%, $base-0 87%);
-        .owl-prev {
-            bottom: 0;
-            width: 50%;
-            height: 60px;
-            opacity: 0;
-            display: block;
-            border-right: 1px solid $base-0 !important;
-            background-color: $primary !important;
-            position: absolute;
-            left: 0;
-        }
-        .owl-next {
-            bottom: 0;
-            width: 50%;
-            height: 60px;
-            opacity: 0;
-            display: block;
-            border-right: 1px solid $base-0 !important;
-            background-color: $primary !important;
-            position: absolute;
-            right: 0;
         }
     }
 }

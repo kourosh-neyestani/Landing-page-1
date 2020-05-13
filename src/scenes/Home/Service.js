@@ -1,44 +1,47 @@
 import React from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
-import { FaGem } from "react-icons/fa";
+import { IoIosBasket, IoIosBasketball, IoIosColorPalette, IoIosCode, IoIosDesktop, IoIosCube, IoIosFlask, IoIosFitness, IoIosFingerPrint, IoIosHeartEmpty, IoIosMusicalNotes, IoIosRocket, IoMdPlanet, IoMdSchool, IoMdTv, IoMdWine } from "react-icons/io";
+
+// Components
+import Icon from "../../components/common/Icon";
 
 const service = [
     {
         title: "Endurance",
         subtitle: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo.",
-        icon: <FaGem className="icon" />,
+        icon: <IoIosBasket />,
         link: "/service-details",
     },
     {
         title: "Strength",
         subtitle: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo.",
         link: "/service-details",
-        icon: <FaGem className="icon" />,
+        icon: <IoIosBasketball />,
     },
     {
         title: "Power Lifting",
         subtitle: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo.",
         link: "/service-details",
-        icon: <FaGem className="icon" />,
+        icon: <IoIosColorPalette />,
     },
     {
         title: "Power Yoga",
         subtitle: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo.",
         link: "/service-details",
-        icon: <FaGem className="icon" />,
+        icon: <IoIosCode />,
     },
     {
         title: "Cardio",
         subtitle: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo.",
         link: "/service-details",
-        icon: <FaGem className="icon" />,
+        icon: <IoIosDesktop />,
     },
     {
         title: "Climbing",
         subtitle: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo.",
         link: "/service-details",
-        icon: <FaGem className="icon" />,
+        icon: <IoIosCube />,
     },
 ];
 
@@ -100,11 +103,9 @@ function Service() {
                                 <div class="inner">
                                     <div class="service-item">
                                         <div class="service-head">
-                                            <span class="service-icon ti-heart"></span>
-                                            <span class="count">{`0${index + 1}.`}</span>
-                                            <h3>
-                                                <Link to={item.link}>{item.title}</Link>
-                                            </h3>
+                                            <Icon label={`0${index + 1}.`} title={item.title}>
+                                                {item.icon}
+                                            </Icon>
                                         </div>
                                         <div class="service-body">
                                             <p>{item.subtitle}</p>
