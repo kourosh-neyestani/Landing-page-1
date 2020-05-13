@@ -1,7 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
-import { IoIosBasket, IoIosBasketball, IoIosColorPalette, IoIosCode, IoIosDesktop, IoIosCube, IoIosFlask, IoIosFitness, IoIosFingerPrint, IoIosHeartEmpty, IoIosMusicalNotes, IoIosRocket, IoMdPlanet, IoMdSchool, IoMdTv, IoMdWine } from "react-icons/io";
 
 // Components
 import Icon from "../../components/common/Icon";
@@ -10,38 +9,38 @@ const service = [
     {
         title: "Endurance",
         subtitle: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo.",
-        icon: <IoIosBasket />,
         link: "/service-details",
+        icon: "ti-heart",
     },
     {
         title: "Strength",
         subtitle: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo.",
         link: "/service-details",
-        icon: <IoIosBasketball />,
+        icon: "ti-ruler-pencil",
     },
     {
         title: "Power Lifting",
         subtitle: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo.",
         link: "/service-details",
-        icon: <IoIosColorPalette />,
+        icon: "ti-paint-bucket",
     },
     {
         title: "Power Yoga",
         subtitle: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo.",
         link: "/service-details",
-        icon: <IoIosCode />,
+        icon: "ti-cup",
     },
     {
         title: "Cardio",
         subtitle: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo.",
         link: "/service-details",
-        icon: <IoIosDesktop />,
+        icon: "ti-ruler-alt-2",
     },
     {
         title: "Climbing",
         subtitle: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo.",
         link: "/service-details",
-        icon: <IoIosCube />,
+        icon: "ti-brush-alt",
     },
 ];
 
@@ -94,24 +93,26 @@ function Service() {
     };
 
     return (
-        <section className="section section-service section-service-1">
+        <section className="section section-service section-service-1 display-fit-screen">
             <div className="display-full-screen">
                 <div className="overlay-image" style={{ backgroundImage: `url(/assets/images/service/1.jpg)` }}>
                     <Slider className="el-slider" {...sliderSettings}>
                         {service.map((item, index) => (
                             <div className="item box" key={index}>
-                                <div className="inner">
-                                    <div className="service-item">
-                                        <div className="service-head">
-                                            <Icon label={`0${index + 1}.`} title={item.title}>
-                                                {item.icon}
-                                            </Icon>
-                                        </div>
-                                        <div className="service-body">
-                                            <p>{item.subtitle}</p>
+                                <Link to={`/service-details`}>
+                                    <div className="inner">
+                                        <div className="service-item">
+                                            <div className="service-head">
+                                                <Icon label={`0${index + 1}.`} title={item.title}>
+                                                    <span className={item.icon} />
+                                                </Icon>
+                                            </div>
+                                            <div className="service-body">
+                                                <p>{item.subtitle}</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </Link>
                             </div>
                         ))}
                     </Slider>

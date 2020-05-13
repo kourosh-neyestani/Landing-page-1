@@ -38,7 +38,7 @@ function About() {
                                                 <div className="resume-item">
                                                     <div className="resume-head">
                                                         <Icon title="Yoga Club Coach" subtitle="New York" small="(2016-2018)">
-                                                            <IoIosBasket />
+                                                            <span className="ti-paint-bucket"></span>
                                                         </Icon>
                                                     </div>
                                                     <div className="resume-body">
@@ -50,7 +50,7 @@ function About() {
                                                 <div className="resume-item">
                                                     <div className="resume-head">
                                                         <Icon title="Neo Club Coach" subtitle="New York" small="(2016-2018)">
-                                                            <IoIosBasket />
+                                                            <span className="ti-cup"></span>
                                                         </Icon>
                                                     </div>
                                                     <div className="resume-body">
@@ -62,7 +62,7 @@ function About() {
                                                 <div className="resume-item">
                                                     <div className="resume-head">
                                                         <Icon title="Fitness Trainer" subtitle="New York" small="(2016-2018)">
-                                                            <IoIosColorPalette />
+                                                            <span className="ti-ruler-alt-2"></span>
                                                         </Icon>
                                                     </div>
                                                     <div className="resume-body">
@@ -83,7 +83,7 @@ function About() {
                                                 <div className="resume-item">
                                                     <div className="resume-head">
                                                         <Icon title="Yoga Club Coach" subtitle="New York" className="el-icon-dark">
-                                                            <IoIosCode />
+                                                            <span className="ti-pencil-alt"></span>
                                                         </Icon>
                                                     </div>
                                                     <div className="resume-body">
@@ -95,7 +95,7 @@ function About() {
                                                 <div className="resume-item">
                                                     <div className="resume-head">
                                                         <Icon title="Neo Club Coach" subtitle="New York" className="el-icon-dark">
-                                                            <IoIosDesktop />
+                                                            <span className="ti-heart"></span>
                                                         </Icon>
                                                     </div>
                                                     <div className="resume-body">
@@ -107,7 +107,7 @@ function About() {
                                                 <div className="resume-item">
                                                     <div className="resume-head">
                                                         <Icon title="Neo Club Coach" subtitle="New York" className="el-icon-dark">
-                                                            <IoIosCube />
+                                                            <span className="ti-paint-bucket"></span>
                                                         </Icon>
                                                     </div>
                                                     <div className="resume-body">

@@ -357,3 +357,13 @@ img {
 // ::selection {
 //     background-color: $primary;
 // }
+
+body {
+    -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+

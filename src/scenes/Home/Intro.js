@@ -4,17 +4,17 @@ import { Link } from "react-router-dom";
 
 function Intro() {
     return (
-        <section className="section section-hero section-hero-1">
+        <section className="section section-hero section-hero-1 display-fit-screen">
             <div className="hero-content">
                 <Slider className="el-slider">
                     <div className="slide">
-                        <div className="image overlay-image" style={{backgroundImage: `url(/assets/images/hero/1-1.jpg)`}}></div>
+                        <div className="image overlay-image" style={{ backgroundImage: `url(/assets/images/hero/1-1.jpg)` }}></div>
                     </div>
                     <div className="slide">
-                        <div className="image overlay-image" style={{backgroundImage: `url(/assets/images/hero/1-2.jpg)`}}></div>
+                        <div className="image overlay-image" style={{ backgroundImage: `url(/assets/images/hero/1-2.jpg)` }}></div>
                     </div>
                     <div className="slide">
-                        <div className="image overlay-image" style={{backgroundImage: `url(/assets/images/hero/1-3.jpg)`}}></div>
+                        <div className="image overlay-image" style={{ backgroundImage: `url(/assets/images/hero/1-3.jpg)` }}></div>
                     </div>
                 </Slider>
             </div>

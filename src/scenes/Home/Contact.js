@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-grid-system";
-import { IoIosBasket, IoIosBasketball, IoIosColorPalette, IoIosCode, IoIosDesktop, IoIosCube, IoIosFlask, IoIosFitness, IoIosFingerPrint, IoIosHeartEmpty, IoIosMusicalNotes, IoIosRocket, IoMdPlanet, IoMdSchool, IoMdTv, IoMdWine } from "react-icons/io";
+import { FaTwitter, FaGithub, FaVimeo } from "react-icons/fa";
 
 // Components
 import Icon from "../../components/common/Icon";
@@ -14,17 +14,17 @@ function Contact() {
                     <ul>
                         <li>
                             <a href="/#">
-                                <i className="fa fa-twitter"></i>
+                                <FaTwitter />
                             </a>
                         </li>
                         <li>
                             <a href="/#">
-                                <i className="fa fa-github"></i>
+                                <FaGithub />
                             </a>
                         </li>
                         <li>
                             <a href="/#">
-                                <i className="fa fa-vimeo"></i>
+                                <FaVimeo />
                             </a>
                         </li>
                     </ul>
@@ -62,17 +62,17 @@ function Contact() {
                         <Row>
                             <Col xs={12} sm={12} md={6} lg={4}>
                                 <Icon title="PHONE" subtitle="+123 456-789-000">
-                                    <IoIosDesktop />
+                                    <span className="ti-mobile"></span>
                                 </Icon>
                             </Col>
                             <Col xs={12} sm={12} md={6} lg={4}>
                                 <Icon title="EMAIL" subtitle="Example@domain.com">
-                                    <IoIosDesktop />
+                                    <span className="ti-email"></span>
                                 </Icon>
                             </Col>
                             <Col xs={12} sm={12} md={12} lg={4}>
                                 <Icon title="ADDRESS" subtitle="California, USA">
-                                    <IoIosDesktop />
+                                    <span className="ti-direction"></span>
                                 </Icon>
                             </Col>
                         </Row>
