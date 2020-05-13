@@ -50,9 +50,6 @@ function Home() {
         <div>
             <Header />
             <Switch>
-                <Route exact path={path}>
-                    <Intro />
-                </Route>
                 {routes.map((item, index) => (
                     <Route exact path={`${path}/${item.link}`} key={index}>
                         {item.component}

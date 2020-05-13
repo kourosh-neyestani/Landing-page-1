@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-grid-system";
-import { IoIosBasket, IoIosBasketball, IoIosColorPalette, IoIosCode, IoIosDesktop, IoIosCube, IoIosFlask, IoIosFitness, IoIosFingerPrint, IoIosHeartEmpty, IoIosMusicalNotes, IoIosRocket, IoMdPlanet, IoMdSchool, IoMdTv, IoMdWine } from "react-icons/io";
 
 // Components
 import Icon from "../../components/common/Icon";
