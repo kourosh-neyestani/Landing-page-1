@@ -1,10 +1,8 @@
 import React from "react";
 import { Switch, Route, useRouteMatch } from "react-router-dom";
 
-// Components
-import Header from "../../components/header/Header";
-
 // Sections
+import Header from "./Header";
 import Blog from "./Blog";
 import About from "./About";
 import Intro from "./Intro";
