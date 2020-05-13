@@ -10,7 +10,7 @@ function About() {
         <section className="section section-about section-about-1">
             <div className="display-full-screen">
                 <div className="display-center">
-                    <div className="section-title-1">
+                    <div className="about-me">
                         <Container>
                             <div className="my-avatar">
                                 <img src="/assets/images/person/1.jpg" alt="My Avatar" />
