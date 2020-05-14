@@ -10,6 +10,7 @@ import "./index.scss";
 // Scenes
 import Home from "./scenes/Home";
 import Home2 from "./scenes/Home2";
+import Home4 from "./scenes/Home4";
 
 const Root = () => {
     return (
@@ -17,6 +18,7 @@ const Root = () => {
             <Switch>
                 <Route path="/home-1" component={Home} />
                 <Route path="/home-2" component={Home2} />
+                <Route path="/home-4" component={Home4} />
             </Switch>
             <Lines />
         </BrowserRouter>
