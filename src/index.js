@@ -2,19 +2,21 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
-import { Lines } from 'react-preloaders';
+import { Lines } from "react-preloaders";
 
 // Stylesheet
 import "./index.scss";
 
 // Scenes
 import Home from "./scenes/Home";
+import Home2 from "./scenes/Home2";
 
 const Root = () => {
     return (
         <BrowserRouter basename={"/"}>
             <Switch>
                 <Route path="/home-1" component={Home} />
+                <Route path="/home-2" component={Home2} />
             </Switch>
             <Lines />
         </BrowserRouter>
