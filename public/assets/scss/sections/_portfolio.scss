@@ -26,12 +26,13 @@
                 transition: all 600ms;
             }
             .content {
-                top: 50%;
+                top: 60%;
                 left: 50%;
                 width: 100%;
-                opacity: 0;
+                visibility: hidden;
                 position: absolute;
                 text-align: center;
+                transition: all 450ms;
                 -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
 
@@ -57,7 +58,8 @@
                 transform: scale(1.2, 1.2);
             }
             .content {
-                opacity: 1;
+                top: 50%;
+                visibility: visible;
             }
         }
     }

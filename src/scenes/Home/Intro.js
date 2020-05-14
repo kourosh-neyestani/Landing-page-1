@@ -18,7 +18,8 @@ function Intro() {
                     </div>
                 </Slider>
             </div>
-            <div className="hero-sidebar">
+            <div className="hero-sidebar overlay-color">
+                <span className="bg-color bg-primary"></span>
                 <div className="display-center">
                     <div className="content">
                         <h1>BUILD YOUR BODY STRONG</h1>

@@ -1,5 +1,7 @@
 import React from "react";
-import { Switch, Route, useRouteMatch } from "react-router-dom";
+import ScrollAnimation from "react-animate-on-scroll";
+import { Route, useRouteMatch } from "react-router-dom";
+import { spring, AnimatedSwitch } from "react-router-transition";
 
 // Sections
 import Header from "./Header";
@@ -43,19 +45,54 @@ const routes = [
     },
 ];
 
+function mapStyles(styles) {
+    return {
+        opacity: styles.opacity,
+        transition: `all 180ms linear`,
+        transform: `scale(${styles.scale}) rotate(${styles.rotate}deg)`,
+    };
+}
+
+function bounce(val) {
+    return spring(val, {
+        stiffness: 330,
+        damping: 22,
+    });
+}
+
+const bounceTransition = {
+    atEnter: {
+        opacity: 0,
+        scale: 1.2,
+        rotate: 0,
+    },
+    atLeave: {
+        opacity: bounce(1),
+        scale: bounce(1),
+        rotate: 0,
+    },
+    atActive: {
+        opacity: bounce(1),
+        scale: bounce(1),
+        rotate: bounce(0),
+    },
+};
+
 function Home() {
     let { path } = useRouteMatch();
 
     return (
         <div>
             <Header />
-            <Switch>
+            <AnimatedSwitch atEnter={bounceTransition.atEnter} atLeave={bounceTransition.atLeave} atActive={bounceTransition.atActive} mapStyles={mapStyles} className="route-wrapper">
                 {routes.map((item, index) => (
                     <Route exact path={`${path}/${item.link}`} key={index}>
-                        {item.component}
+                        <ScrollAnimation animateIn="fadeIn" duration={1.26}>
+                            {item.component}
+                        </ScrollAnimation>
                     </Route>
                 ))}
-            </Switch>
+            </AnimatedSwitch>
         </div>
     );
 }

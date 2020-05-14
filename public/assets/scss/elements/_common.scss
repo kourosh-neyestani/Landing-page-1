@@ -119,3 +119,14 @@
         margin-right: auto;
     }
 }
+
+@media (max-width: 768px) {
+    .el-headline {
+        p {
+            font-size: 14px;
+        }
+        .el-headline-title {
+            font-size: 21px;
+        }
+    }
+}

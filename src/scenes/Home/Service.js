@@ -76,14 +76,14 @@ function Service() {
                 },
             },
             {
-                breakpoint: 576,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
                 },
             },
             {
-                breakpoint: 0,
+                breakpoint: 570,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,

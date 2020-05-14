@@ -43,6 +43,7 @@ function Blog() {
         slidesToShow: 3,
         slidesToScroll: 3,
         centerPadding: 30,
+        draggable: false,
         responsive: [
             {
                 breakpoint: 1500,
@@ -52,14 +53,14 @@ function Blog() {
                 },
             },
             {
-                breakpoint: 992,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
                 },
             },
             {
-                breakpoint: 0,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -72,7 +73,7 @@ function Blog() {
         <section className="section section-blog section-blog-1 bg-gradient-side overlay-color">
             <span className="bg-color bg-dark-60"></span>
             <div className="display-spacing">
-                <Container>
+                <Container className="container">
                     <Headline label="Blog" title="Latest Blog Posts/News" divider_1={true} position="center"/>
                     <Slider className="el-slider el-slider-plr--15" {...sliderSettings}>
                         {posts.map((item, index) => (

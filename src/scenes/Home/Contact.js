@@ -8,8 +8,7 @@ import Headline from "../../components/common/Headline";
 
 function Contact() {
     return (
-        <section className="section section-contact section-contact-1 bg-gradient-side overlay-color">
-            <span class="bg-color bg-dark-60"></span>
+        <section className="section section-contact section-contact-1 display-fit-screen">
             <div className="sidebar overlay-image" style={{ backgroundImage: `url(/assets/images/contact/1.jpg)` }}>
                 <div className="social-links">
                     <ul>
@@ -34,7 +33,7 @@ function Contact() {
             </div>
             <div className="content">
                 <div className="display-spacing">
-                    <Container>
+                    <Container className="container">
                         <Headline title="Get In Touch" divider_2={true} subtitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua. Ut enim ad minim enim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
                         <form className="form form-1">
                             <Row>

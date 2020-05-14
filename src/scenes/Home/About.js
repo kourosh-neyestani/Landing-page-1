@@ -10,7 +10,7 @@ function About() {
             <div className="display-full-screen">
                 <div className="display-center">
                     <div className="about-me">
-                        <Container>
+                        <Container className="container">
                             <div className="my-avatar">
                                 <img src="/assets/images/person/1.jpg" alt="My Avatar" />
                             </div>
@@ -25,7 +25,7 @@ function About() {
                 </div>
             </div>
             <div className="section-resume section-resume-1 my-resume">
-                <Container>
+                <Container className="container">
                     <div className="box">
                         <Row nogutter>
                             <Col xs={12} sm={12} md={12} lg={12} xl={6} className="bg-primary">
@@ -48,7 +48,7 @@ function About() {
                                             <li>
                                                 <div className="resume-item">
                                                     <div className="resume-head">
-                                                        <Icon title="Neo Club Coach" subtitle="New York" small="(2016-2018)">
+                                                        <Icon title="Neo Club Coach" subtitle="New York" small="(2018-2019)">
                                                             <span className="ti-cup"></span>
                                                         </Icon>
                                                     </div>
@@ -60,7 +60,7 @@ function About() {
                                             <li>
                                                 <div className="resume-item">
                                                     <div className="resume-head">
-                                                        <Icon title="Fitness Trainer" subtitle="New York" small="(2016-2018)">
+                                                        <Icon title="Fitness Trainer" subtitle="New York" small="(2019-2020)">
                                                             <span className="ti-ruler-alt-2"></span>
                                                         </Icon>
                                                     </div>
@@ -81,7 +81,7 @@ function About() {
                                             <li>
                                                 <div className="resume-item">
                                                     <div className="resume-head">
-                                                        <Icon title="Yoga Club Coach" subtitle="New York" className="el-icon-dark">
+                                                        <Icon title="Yoga Club Coach" subtitle="New York" className="el-icon-dark" small="(2016-2017)">
                                                             <span className="ti-pencil-alt"></span>
                                                         </Icon>
                                                     </div>
@@ -93,7 +93,7 @@ function About() {
                                             <li>
                                                 <div className="resume-item">
                                                     <div className="resume-head">
-                                                        <Icon title="Neo Club Coach" subtitle="New York" className="el-icon-dark">
+                                                        <Icon title="Neo Club Coach" subtitle="New York" className="el-icon-dark" small="(2017-2019)">
                                                             <span className="ti-heart"></span>
                                                         </Icon>
                                                     </div>
@@ -105,7 +105,7 @@ function About() {
                                             <li>
                                                 <div className="resume-item">
                                                     <div className="resume-head">
-                                                        <Icon title="Neo Club Coach" subtitle="New York" className="el-icon-dark">
+                                                        <Icon title="Neo Club Coach" subtitle="New York" className="el-icon-dark" small="(2019-2020)">
                                                             <span className="ti-paint-bucket"></span>
                                                         </Icon>
                                                     </div>

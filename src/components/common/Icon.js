@@ -1,7 +1,7 @@
 import React from "react";
 
 function Icon(props) {
-    const { label, title, subtitle, children, className } = props;
+    const { label, title, small, subtitle, children, className } = props;
 
     return (
         <div className={`el-icon ${className}`}>
@@ -10,7 +10,11 @@ function Icon(props) {
             </div>
             {label && <span className="el-icon-label">{label}</span>}
             {title && <span className="el-icon-title">{title}</span>}
-            {subtitle && <span className="el-icon-subtitle">{subtitle}</span>}
+            {subtitle && (
+                <span className="el-icon-subtitle">
+                    {subtitle} {small && <span className="el-icon-small">{small}</span>}
+                </span>
+            )}
         </div>
     );
 }

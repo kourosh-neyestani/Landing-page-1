@@ -147,3 +147,37 @@
 @import "sections/testimonials";
 @import "sections/call-to-action";
 @import "sections/pricing-tables";
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px !important;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 100% !important;
+        display: block !important;
+        max-width: 600px !important;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 840px !important;
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1000px !important;
+    }
+}
+@media (min-width: 1500px) {
+    .container {
+        max-width: 1200px !important;
+    }
+}
+
+

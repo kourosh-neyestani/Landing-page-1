@@ -153,7 +153,7 @@ function Portfolio() {
         <section className="section section-portfolio section-portfolio-1 bg-gradient-side overlay-color">
             <span className="bg-color bg-dark-60"></span>
             <div className="display-spacing">
-                <Container>
+                <Container className="container">
                     <Headline label="Portfolio" title="Let's See Our portfolio" divider_1={true} position="center" />
                     <Tabs className="el-tabs el-tabs-1" selectedTabClassName="active">
                         <TabList className="el-tabs-links">
@@ -165,7 +165,7 @@ function Portfolio() {
                             <TabPanel key={categoryIndex}>
                                 <Row className="row-center mb--30">
                                     {category.items.map((item, index) => (
-                                        <Col key={index} xs={6} sm={6} md={4} lg={3} xl={3}>
+                                        <Col key={index} xs={6} sm={6} md={6} lg={3} xl={3}>
                                             <div className="portfolio-item">
                                                 <Link to={item.link}>
                                                     <div className="portfolio-card">
