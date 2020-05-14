@@ -1,6 +1,33 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useRouteMatch, NavLink, Link } from "react-router-dom";
 import { FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
+
+const menuItems = [
+    {
+        link: `intro`,
+        title: "Intro",
+    },
+    {
+        link: "about",
+        title: "About Me",
+    },
+    {
+        link: "service",
+        title: "Service",
+    },
+    {
+        link: "portfolio",
+        title: "Portfolio",
+    },
+    {
+        link: "blog",
+        title: "Blog",
+    },
+    {
+        link: "contact",
+        title: "Contact",
+    },
+];
 
 function Header() {
     const [displaySidenav, setDisplaySidenav] = useState(false);
@@ -35,7 +62,6 @@ function Header() {
                 </ul>
             </header>
             <div className={`app-sidenav ${displaySidenav && "active"}`}>
-                {console.log("sidenav ", displaySidenav)}
                 <div className="sidenav-menu">
                     <div className="logo">
                         <Link to={`${url}/home-1`}>NUXT</Link>
@@ -53,17 +79,17 @@ function Header() {
                     <div className="sidenav-links">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="!#">
                                     <FaTwitter className="icon" />
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="!#">
                                     <FaGithub className="icon" />
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="!#">
                                     <FaInstagram className="icon" />
                                 </a>
                             </li>
@@ -76,32 +102,5 @@ function Header() {
         </>
     );
 }
-
-const menuItems = [
-    {
-        link: `intro`,
-        title: "Intro",
-    },
-    {
-        link: "about",
-        title: "About Me",
-    },
-    {
-        link: "service",
-        title: "Service",
-    },
-    {
-        link: "portfolio",
-        title: "Portfolio",
-    },
-    {
-        link: "blog",
-        title: "Blog",
-    },
-    {
-        link: "contact",
-        title: "Contact",
-    },
-];
 
 export default Header;
