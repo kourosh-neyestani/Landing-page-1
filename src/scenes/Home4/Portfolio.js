@@ -150,7 +150,7 @@ const portfolio = [
 
 function Portfolio() {
     return (
-        <section className="section section-portfolio section-portfolio-1 bg-gradient-side overlay-color">
+        <section className="section section-portfolio section-portfolio-2 bg-gradient-side overlay-color">
             <span className="bg-color bg-dark-60"></span>
             <div className="display-spacing">
                 <Container className="container">

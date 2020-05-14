@@ -1,44 +1,58 @@
 import React from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
+import { Container, Row, Col } from "react-grid-system";
 
 // Components
 import Icon from "../../components/common/Icon";
+import Headline from "../../components/common/Headline";
 
 const service = [
     {
         title: "Endurance",
-        subtitle: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo.",
+        subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit incididunt ut labore et dolore",
         link: "/service-details",
         icon: "ti-heart",
     },
     {
         title: "Strength",
-        subtitle: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo.",
+        subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit incididunt ut labore et dolore",
         link: "/service-details",
         icon: "ti-ruler-pencil",
     },
     {
         title: "Power Lifting",
-        subtitle: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo.",
+        subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit incididunt ut labore et dolore",
         link: "/service-details",
         icon: "ti-paint-bucket",
     },
     {
         title: "Power Yoga",
-        subtitle: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo.",
+        subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit incididunt ut labore et dolore",
         link: "/service-details",
         icon: "ti-cup",
     },
     {
         title: "Cardio",
-        subtitle: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo.",
+        subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit incididunt ut labore et dolore",
         link: "/service-details",
         icon: "ti-ruler-alt-2",
     },
     {
         title: "Climbing",
-        subtitle: "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo.",
+        subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit incididunt ut labore et dolore",
+        link: "/service-details",
+        icon: "ti-brush-alt",
+    },
+    {
+        title: "Climbing",
+        subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit incididunt ut labore et dolore",
+        link: "/service-details",
+        icon: "ti-brush-alt",
+    },
+    {
+        title: "Climbing",
+        subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit incididunt ut labore et dolore",
         link: "/service-details",
         icon: "ti-brush-alt",
     },
@@ -51,14 +65,14 @@ function Service() {
         arrows: false,
         infinite: false,
         initialSlide: 0,
-        slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         responsive: [
             {
                 breakpoint: 1500,
                 settings: {
-                    slidesToShow: 5,
-                    slidesToScroll: 5,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
                 },
             },
             {
@@ -93,15 +107,17 @@ function Service() {
     };
 
     return (
-        <section className="section section-service section-service-1 display-fit-screen">
-            <div className="display-full-screen">
-                <div className="overlay-image" style={{ backgroundImage: `url(/assets/images/service/1.jpg)` }}>
-                    <Slider className="el-slider" {...sliderSettings}>
+        <section className="section section-service section-service-4 overlay-image overlay-color" style={{ backgroundImage: `url(/assets/images/service/1.jpg)` }}>
+            <span className="bg-color bg-dark-40"></span>
+            <div className="display-spacing">
+                <Container>
+                    <Headline title="Latest Blog Posts/News" divider_1={true} position="center" />
+                    <Row className="mb--30">
                         {service.map((item, index) => (
-                            <div className="item box" key={index}>
-                                <Link to={`/service-details`}>
-                                    <div className="inner">
-                                        <div className="service-item">
+                            <Col xl={3}>
+                                <div className="service-item">
+                                    <div className="display-center">
+                                        <div className="inner">
                                             <div className="service-head">
                                                 <Icon label={`0${index + 1}.`} title={item.title}>
                                                     <span className={item.icon} />
@@ -112,11 +128,11 @@ function Service() {
                                             </div>
                                         </div>
                                     </div>
-                                </Link>
-                            </div>
+                                </div>
+                            </Col>
                         ))}
-                    </Slider>
-                </div>
+                    </Row>
+                </Container>
             </div>
         </section>
     );

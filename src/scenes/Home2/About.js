@@ -6,13 +6,13 @@ import Icon from "../../components/common/Icon";
 
 function About() {
     return (
-        <section className="section section-about section-about-1">
+        <section className="section section-about section-about-2">
             <div className="display-full-screen">
                 <div className="display-center">
                     <div className="about-me">
                         <Container className="container">
                             <div className="my-avatar">
-                                <img src="/assets/images/person/1.jpg" alt="My Avatar" />
+                                <img src="/assets/images/person/2.jpg" alt="My Avatar" />
                             </div>
                             <h2>I'am Miranda Smith.</h2>
                             <h3>Your new Yoga Coach.</h3>
