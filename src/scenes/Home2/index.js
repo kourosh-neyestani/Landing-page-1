@@ -3,6 +3,9 @@ import ScrollAnimation from "react-animate-on-scroll";
 import { Route, useRouteMatch } from "react-router-dom";
 import { spring, AnimatedSwitch } from "react-router-transition";
 
+// Skin
+import "./skin.scss";
+
 // Sections
 import Header from "./Header";
 import Blog from "./Blog";
