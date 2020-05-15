@@ -7,9 +7,14 @@ import * as serviceWorker from "./serviceWorker";
 import "./index.scss";
 
 // Scenes
+import Demo from "./scenes/Demo";
 import Home from "./scenes/Home";
 
 const routes = [
+    {
+        path: "/",
+        component: <Demo />,
+    },
     {
         path: "/home-1",
         component: <Home />,
