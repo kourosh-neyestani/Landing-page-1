@@ -1,13 +1,11 @@
 import React from "react";
-import Slider from "react-slick";
-import { Link } from "react-router-dom";
 import { Container } from "react-grid-system";
 import { FaQuoteRight } from "react-icons/fa";
 
 // Components
 import Headline from "../../components/common/Headline";
 
-function PortfolioDetails(props) {
+function PortfolioDetails() {
     return (
         <div className="section section-details section-portfolio-details display-fit-screen">
             <div className="section-inner-sidebar overlay-image" style={{ backgroundImage: `url(/assets/images/portfolio/1.jpg)` }}></div>

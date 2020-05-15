@@ -18,7 +18,8 @@ function About() {
                             <h3>Your new Yoga Coach.</h3>
                             <p>I'am a fitness coach base in New York since 2008, and i'am very passionate and dedicated to my work.</p>
                             <button type="button" className="button button-md button-primary">
-                                Download CV
+                                <span className="wave"></span>
+                                <span className="text">Download CV</span>
                             </button>
                         </Container>
                     </div>

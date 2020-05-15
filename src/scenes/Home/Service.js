@@ -1,6 +1,5 @@
 import React from "react";
 import Slider from "react-slick";
-import { Link } from "react-router-dom";
 
 // Components
 import Icon from "../../components/common/Icon";
@@ -99,20 +98,18 @@ function Service() {
                     <Slider className="el-slider" {...sliderSettings}>
                         {service.map((item, index) => (
                             <div className="item box" key={index}>
-                                <Link to={`/service-details`}>
-                                    <div className="inner">
-                                        <div className="service-item">
-                                            <div className="service-head">
-                                                <Icon label={`0${index + 1}.`} title={item.title}>
-                                                    <span className={item.icon} />
-                                                </Icon>
-                                            </div>
-                                            <div className="service-body">
-                                                <p>{item.subtitle}</p>
-                                            </div>
+                                <div className="inner">
+                                    <div className="service-item">
+                                        <div className="service-head">
+                                            <Icon label={`0${index + 1}.`} title={item.title}>
+                                                <span className={item.icon} />
+                                            </Icon>
+                                        </div>
+                                        <div className="service-body">
+                                            <p>{item.subtitle}</p>
                                         </div>
                                     </div>
-                                </Link>
+                                </div>
                             </div>
                         ))}
                     </Slider>

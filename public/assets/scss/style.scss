@@ -1,8 +1,8 @@
 /*------------------------------------
 
-    Theme Name  : Mitra
-    Theme URI   : http://demo.afracode.com/mitra
-    Description : Mitra - React Personal Portfolio Template
+    Theme Name  : Nuxt
+    Theme URI   : http://demo.afracode.com/nuxt
+    Description : Nuxt - React Personal Portfolio Template
     Author Name : Afracode
     Author URI  : http://afracode.com
     Version     : 1.0
@@ -21,7 +21,6 @@
     |   |___ typography
     |   |___ extend
     |   |___ animations
-    |   |___ shortcode
     |   |___ spacing
     |   |___ Helpers
     |
@@ -91,22 +90,11 @@
     Default Styles
 ------------------------------------*/
 
-.el-slider-plr--15 {
-    padding-left: -15px;
-    padding-right: -15px;
-
-    .slick-slide {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
-
 @import "default/variables";
 @import "default/mixins";
 @import "default/reset";
 @import "default/typography";
 @import "default/animations";
-@import "default/shortcode";
 @import "default/spacing";
 @import "default/helpers";
 
@@ -150,38 +138,6 @@
 @import "sections/testimonials";
 @import "sections/call-to-action";
 @import "sections/pricing-tables";
-
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px !important;
-    }
-}
-@media (min-width: 768px) {
-    .container {
-        width: 100% !important;
-        display: block !important;
-        max-width: 600px !important;
-        padding-left: 25px !important;
-        padding-right: 25px !important;
-    }
-}
-@media (min-width: 992px) {
-    .container {
-        max-width: 840px !important;
-        padding-left: 30px !important;
-        padding-right: 30px !important;
-    }
-}
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1000px !important;
-    }
-}
-@media (min-width: 1500px) {
-    .container {
-        max-width: 1200px !important;
-    }
-}
 
 /*------------------------------------
     Other Styles

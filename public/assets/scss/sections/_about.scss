@@ -178,10 +178,8 @@
 .section-resume-1 .resume-light .el-icon:before {
     background-color: $primary;
 }
-/* 
-* Divider
-*/
 
+// About 1
 .section-about-1 {
     .section-resume-1 {
         &:before {
@@ -294,60 +292,5 @@
         padding-left: 15px !important;
         padding-right: 0 !important;
         padding-bottom: 0 !important;
-    }
-}
-
-// About 2
-.section-about-2 {
-    .about-me {
-        text-align: center;
-        p {
-            font-size: 14px;
-            max-width: 600px;
-            margin: 0 auto 30px;
-        }
-        h2 {
-            color: $primary;
-            font-size: 45px;
-            font-weight: 700;
-            line-height: 1.1;
-        }
-        h3 {
-            color: $primary;
-            font-size: 45px;
-            font-weight: 700;
-            line-height: 1.1;
-            margin-bottom: 30px;
-        }
-        .my-avatar {
-            width: 180px;
-            height: 180px;
-            overflow: hidden;
-            border-radius: 50%;
-            margin: 0 auto 30px;
-            border-left: 3px solid $primary;
-            border-bottom: 3px solid $primary;
-
-            img {
-                width: 100%;
-            }
-        }
-    }
-    .my-resume {
-        top: 0;
-        position: relative;
-        padding-bottom: 100px;
-        &:before {
-            top: -100px !important;
-            bottom: 200px !important;
-        }
-        &:after {
-            top: 100px;
-            bottom: 0;
-            width: 50%;
-            content: "";
-            opacity: 0.1;
-            position: absolute;
-        }
     }
 }

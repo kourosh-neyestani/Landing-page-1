@@ -50,3 +50,7 @@
         }
     }
 }
+
+.el-tabs .react-tabs__tab-panel--selected {
+    animation: fadeIn 450ms linear;
+}

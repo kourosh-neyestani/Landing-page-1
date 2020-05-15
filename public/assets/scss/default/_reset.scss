@@ -1,6 +1,6 @@
-/**
- * Reset Styels
- */
+/*------------------------------------
+    Reset Styels
+------------------------------------*/
 
 * {
     -webkit-box-sizing: border-box;
@@ -17,6 +17,10 @@ body {
     color: $base-1;
     margin: 0;
     background-color: $base-0;
+    -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 
 article,
@@ -352,44 +356,4 @@ select {
 img {
     max-width: 100%;
     height: auto;
-}
-
-// ::selection {
-//     background-color: $primary;
-// }
-
-body {
-    -ms-overflow-style: none;
-}
-body::-webkit-scrollbar {
-    display: none;
-}
-.slick-slider {
-    .slick-dots {
-        li {
-            top: 25px;
-            position: relative;
-            margin: 0 !important;
-
-            button {
-                &:before {
-                    color: $base-1;
-                    width: 8px !important;
-                    height: 8px !important;
-                    opacity: 1 !important;
-                    overflow: hidden;
-                    border: 1px solid $base-1;
-                    border-radius: 50%;
-                }
-            }
-            &.slick-active {
-                button {
-                    &:before {
-                        color: $primary;
-                        border-color: $primary;
-                    }
-                }
-            }
-        }
-    }
 }
