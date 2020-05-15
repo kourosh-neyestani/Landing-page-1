@@ -1,10 +1,6 @@
 import React from "react";
-import ScrollAnimation from "react-animate-on-scroll";
-import { Route, useRouteMatch } from "react-router-dom";
+import { BrowserRouter, Route, useRouteMatch, Switch, Link } from "react-router-dom";
 import { spring, AnimatedSwitch } from "react-router-transition";
-
-// Components
-import Helmet from "../../components/common/Helmet";
 
 // Sections
 import Header from "./Header";
@@ -17,33 +13,39 @@ import Portfolio from "./Portfolio";
 
 const routes = [
     {
-        link: `intro`,
+        link: ``,
         title: "Intro",
+        exact: true,
         component: <Intro />,
     },
     {
         link: "about",
         title: "About Me",
+        exact: false,
         component: <About />,
     },
     {
         link: "service",
         title: "Service",
+        exact: false,
         component: <Service />,
     },
     {
         link: "portfolio",
         title: "Portfolio",
+        exact: false,
         component: <Portfolio />,
     },
     {
         link: "blog",
         title: "Blog",
+        exact: false,
         component: <Blog />,
     },
     {
         link: "contact",
         title: "Contact",
+        exact: false,
         component: <Contact />,
     },
 ];
@@ -87,16 +89,13 @@ function Home() {
     return (
         <div>
             <Header />
-            <Helmet title="Main Demo"></Helmet>
-            <AnimatedSwitch atEnter={bounceTransition.atEnter} atLeave={bounceTransition.atLeave} atActive={bounceTransition.atActive} mapStyles={mapStyles} className="route-wrapper">
+            <Switch atEnter={bounceTransition.atEnter} atLeave={bounceTransition.atLeave} atActive={bounceTransition.atActive} mapStyles={mapStyles} className="route-wrapper">
                 {routes.map((item, index) => (
-                    <Route exact path={`${path}/${item.link}`} key={index}>
-                        <ScrollAnimation animateIn="fadeIn" duration={1.26}>
-                            {item.component}
-                        </ScrollAnimation>
+                    <Route path={`${process.env.PUBLIC_URL}${path}/${item.link}`} key={index} exact>
+                        {item.component}
                     </Route>
                 ))}
-            </AnimatedSwitch>
+            </Switch>
         </div>
     );
 }
