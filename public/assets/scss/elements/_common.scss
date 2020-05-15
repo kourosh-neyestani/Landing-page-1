@@ -130,3 +130,57 @@
         }
     }
 }
+
+/*------------------------------------
+    Element: Page Title
+------------------------------------*/
+
+.el-page-title {
+    height: 360px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    background-color: $primary;
+
+    h1 {
+        font-size: 36px;
+    }
+}
+
+/*------------------------------------
+    Element: Blockquote
+------------------------------------*/
+
+.el-blockquote {
+    overflow: hidden;
+    position: relative;
+    font-size: 16px;
+    font-style: inherit;
+    margin-top: 30px;
+    padding: 15px 30px 15px 81px;
+
+    p {
+        font-weight: 100;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    .el-blockquote-icon {
+        top: 12px;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        color: $base-1;
+        display: block;
+        font-size: 18px;
+        line-height: 60px;
+        text-align: center;
+        padding-top: 4px;
+        border-radius: 50%;
+        position: absolute;
+        background: $primary;
+    }
+    .el-blockquote-author {
+        color: $primary;
+        font-size: 14px;
+    }
+}

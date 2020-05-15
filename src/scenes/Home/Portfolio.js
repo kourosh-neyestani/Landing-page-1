@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useRouteMatch } from "react-router-dom";
 import { Container, Row, Col } from "react-grid-system";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
@@ -149,6 +149,8 @@ const portfolio = [
 ];
 
 function Portfolio() {
+    let { path } = useRouteMatch();
+
     return (
         <section className="section section-portfolio section-portfolio-1 bg-gradient-side overlay-color">
             <span className="bg-color bg-dark-60"></span>
@@ -167,7 +169,7 @@ function Portfolio() {
                                     {category.items.map((item, index) => (
                                         <Col key={index} xs={6} sm={6} md={6} lg={3} xl={3}>
                                             <div className="portfolio-item">
-                                                <Link to={item.link}>
+                                                <Link to={`${path}${item.link}`}>
                                                     <div className="portfolio-card">
                                                         <div className="image overlay-image" style={{ backgroundImage: `url(${item.image})` }} />
                                                         <div className="content">

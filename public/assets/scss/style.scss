@@ -56,6 +56,7 @@
     |   |___ Pagination
     |   |___ Breadcrumb
     |   |___ Blockquote
+    |   |___ Common Elements
     |
     |
     |___ Sections Styles
@@ -74,6 +75,7 @@
     |   |___ Testimonials
     |   |___ Call To Action
     |   |___ Pricing Tables
+    |   |___ Common Sections
     |
  	|
     |___ Other Styles
@@ -138,6 +140,7 @@
 @import "sections/posts";
 @import "sections/users";
 @import "sections/quotes";
+@import "sections/common";
 @import "sections/search";
 @import "sections/contact";
 @import "sections/features";

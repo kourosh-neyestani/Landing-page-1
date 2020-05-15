@@ -7,27 +7,27 @@ import DemoOptions from "../../components/common/DemoOptions";
 
 const menuItems = [
     {
-        link: `intro`,
+        link: `/intro`,
         title: "Intro",
     },
     {
-        link: "about",
+        link: "/about",
         title: "About Me",
     },
     {
-        link: "service",
+        link: "/service",
         title: "Service",
     },
     {
-        link: "portfolio",
+        link: "/portfolio",
         title: "Portfolio",
     },
     {
-        link: "blog",
+        link: "/blog",
         title: "Blog",
     },
     {
-        link: "contact",
+        link: "/contact",
         title: "Contact",
     },
 ];
@@ -56,7 +56,7 @@ function Header() {
                 <ul className="header-nav">
                     {menuItems.map((item, index) => (
                         <li key={index}>
-                            <NavLink to={`${url}/${item.link}`} activeClassName="active">
+                            <NavLink to={`${url}${item.link}`} activeClassName="active">
                                 <span className="count">0{index + 1}</span>
                                 <span className="anchor">{item.title}</span>
                             </NavLink>
@@ -73,7 +73,7 @@ function Header() {
                     <ul className="sidenav-nav">
                         {menuItems.map((item, index) => (
                             <li key={index} onClick={(e) => handleClick(e)}>
-                                <NavLink to={`${url}/${item.link}`} activeClassName="active">
+                                <NavLink to={`${url}${item.link}`} activeClassName="active">
                                     <span className="anchor">{item.title}</span>
                                 </NavLink>
                             </li>
