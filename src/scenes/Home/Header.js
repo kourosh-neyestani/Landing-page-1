@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { useRouteMatch, NavLink, Link } from "react-router-dom";
 import { FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
 
+// Components
+import DemoOptions from "../../components/common/DemoOptions";
+
 const menuItems = [
     {
         link: `intro`,
@@ -99,6 +102,7 @@ function Header() {
                 </div>
                 <span className="sidenav-close" />
             </div>
+            <DemoOptions />
         </>
     );
 }

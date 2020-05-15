@@ -11,9 +11,13 @@ Contact
         float: right;
         overflow-y: scroll;
         padding: 0 50px;
+        -ms-overflow-style: none;
         background-color: $base-0;
         .form {
             padding-bottom: 50px;
+        }
+        &::-webkit-scrollbar {
+            display: none;
         }
     }
     .sidebar {
@@ -94,8 +98,7 @@ Contact
     }
 }
 
-
-// 
+//
 .section-contact-2 {
     form {
         margin-bottom: $space / 2;

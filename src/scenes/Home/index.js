@@ -3,8 +3,8 @@ import ScrollAnimation from "react-animate-on-scroll";
 import { Route, useRouteMatch } from "react-router-dom";
 import { spring, AnimatedSwitch } from "react-router-transition";
 
-// Skin
-import "./skin.scss";
+// Components
+import Helmet from "../../components/common/Helmet";
 
 // Sections
 import Header from "./Header";
@@ -87,6 +87,7 @@ function Home() {
     return (
         <div>
             <Header />
+            <Helmet title="Main Demo"></Helmet>
             <AnimatedSwitch atEnter={bounceTransition.atEnter} atLeave={bounceTransition.atLeave} atActive={bounceTransition.atActive} mapStyles={mapStyles} className="route-wrapper">
                 {routes.map((item, index) => (
                     <Route exact path={`${path}/${item.link}`} key={index}>
