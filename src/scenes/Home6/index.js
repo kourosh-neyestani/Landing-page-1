@@ -52,7 +52,7 @@ function Home() {
     let { path } = useRouteMatch();
 
     useEffect(() => {
-        document.documentElement.className = "home-4 skin-4";
+        document.documentElement.className = "home-6 skin-6";
         return () => {
             document.documentElement.className = "";
         };

@@ -5,34 +5,36 @@ import { FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
 // Components
 import DemoOptions from "../../components/common/DemoOptions";
 
-const menuItems = [
+const links = [
     {
-        link: `/intro`,
         title: "Intro",
+        path: "/intro",
     },
     {
-        link: "/about",
-        title: "About Me",
+        title: "About",
+        path: "/about",
     },
     {
-        link: "/service",
         title: "Service",
+        path: "/service",
     },
     {
-        link: "/portfolio",
         title: "Portfolio",
+        path: "/portfolio",
     },
     {
-        link: "/blog",
         title: "Blog",
+        path: "/blog",
     },
     {
-        link: "/contact",
         title: "Contact",
+        path: "/contact",
     },
 ];
 
 function Header() {
+    let { url } = useRouteMatch();
+
     const [displaySidenav, setDisplaySidenav] = useState(false);
 
     const handleClick = (e) => {
@@ -40,23 +42,19 @@ function Header() {
         setDisplaySidenav(!displaySidenav);
     };
 
-    let { url } = useRouteMatch();
-
     return (
         <>
-            <header className="app-header app-header-2">
+            <header className="app-header">
                 <div className="header-logo">
-                    <Link to={`/home-1`}>NUXT</Link>
+                    <Link to={url}>NUXT</Link>
                 </div>
-                <Link to={`/home-1`}>
-                    <button className="button button-menu" onClick={(e) => handleClick(e)}>
-                        <span></span>
-                    </button>
-                </Link>
+                <button className="button button-menu" onClick={(e) => handleClick(e)}>
+                    <span></span>
+                </button>
                 <ul className="header-nav">
-                    {menuItems.map((item, index) => (
+                    {links.map((item, index) => (
                         <li key={index}>
-                            <NavLink to={`${url}${item.link}`} activeClassName="active">
+                            <NavLink to={`${url}${item.path}`} activeClassName="active">
                                 <span className="count">0{index + 1}</span>
                                 <span className="anchor">{item.title}</span>
                             </NavLink>
@@ -67,13 +65,13 @@ function Header() {
             <div className={`app-sidenav ${displaySidenav && "active"}`}>
                 <div className="sidenav-menu">
                     <div className="logo">
-                        <Link to={`${url}/home-1`}>NUXT</Link>
+                        <Link to={url}>NUXT</Link>
                     </div>
                     <button className="button" onClick={(e) => handleClick(e)}></button>
                     <ul className="sidenav-nav">
-                        {menuItems.map((item, index) => (
+                        {links.map((item, index) => (
                             <li key={index} onClick={(e) => handleClick(e)}>
-                                <NavLink to={`${url}${item.link}`} activeClassName="active">
+                                <NavLink to={`${url}${item.path}`} activeClassName="active">
                                     <span className="anchor">{item.title}</span>
                                 </NavLink>
                             </li>
