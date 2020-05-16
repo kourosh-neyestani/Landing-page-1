@@ -24,112 +24,52 @@ const pages = [
 
 const colors = [
     {
-        base_0: "red",
-        base_1: "blue",
-        primary: "pink",
-        primary_1: "brown",
-        secondary: "orange",
-        secondary_1: "orangered",
-        className: "body-skin-1",
+        color: "#e90041",
+        className: "skin-1",
     },
     {
-        base_0: "red",
-        base_1: "blue",
-        primary: "pink",
-        primary_1: "brown",
-        secondary: "orange",
-        secondary_1: "orangered",
-        className: "body-skin-2",
+        color: "#DE0D92",
+        className: "skin-2",
     },
     {
-        base_0: "red",
-        base_1: "blue",
-        primary: "pink",
-        primary_1: "brown",
-        secondary: "orange",
-        secondary_1: "orangered",
-        className: "body-skin-3",
+        color: "#7b1f29",
+        className: "skin-3",
     },
     {
-        base_0: "red",
-        base_1: "blue",
-        primary: "pink",
-        primary_1: "brown",
-        secondary: "orange",
-        secondary_1: "orangered",
-        className: "body-skin-4",
+        color: "#ff5e14",
+        className: "skin-4",
     },
     {
-        base_0: "red",
-        base_1: "blue",
-        primary: "pink",
-        primary_1: "brown",
-        secondary: "orange",
-        secondary_1: "orangered",
-        className: "body-skin-5",
+        color: "tomato",
+        className: "skin-5",
     },
     {
-        base_0: "red",
-        base_1: "blue",
-        primary: "pink",
-        primary_1: "brown",
-        secondary: "orange",
-        secondary_1: "orangered",
-        className: "body-skin-6",
+        color: "#ffa000",
+        className: "skin-6",
     },
     {
-        base_0: "red",
-        base_1: "blue",
-        primary: "pink",
-        primary_1: "brown",
-        secondary: "orange",
-        secondary_1: "orangered",
-        className: "body-skin-7",
+        color: "#0b7554",
+        className: "skin-7",
     },
     {
-        base_0: "red",
-        base_1: "blue",
-        primary: "pink",
-        primary_1: "brown",
-        secondary: "orange",
-        secondary_1: "orangered",
-        className: "body-skin-8",
+        color: "#00b7b8",
+        className: "skin-8",
     },
     {
-        base_0: "red",
-        base_1: "blue",
-        primary: "pink",
-        primary_1: "brown",
-        secondary: "orange",
-        secondary_1: "orangered",
-        className: "body-skin-9",
+        color: "#00BCD4",
+        className: "skin-9",
     },
     {
-        base_0: "red",
-        base_1: "blue",
-        primary: "pink",
-        primary_1: "brown",
-        secondary: "orange",
-        secondary_1: "orangered",
-        className: "body-skin-10",
+        color: "#1D32F2",
+        className: "skin-10",
     },
     {
-        base_0: "red",
-        base_1: "blue",
-        primary: "pink",
-        primary_1: "brown",
-        secondary: "orange",
-        secondary_1: "orangered",
-        className: "body-skin-11",
+        color: "#845EC2",
+        className: "skin-11",
     },
     {
-        base_0: "red",
-        base_1: "blue",
-        primary: "pink",
-        primary_1: "brown",
-        secondary: "orange",
-        secondary_1: "orangered",
-        className: "body-skin-11",
+        color: "#7b1f29",
+        className: "skin-12",
     },
 ];
 
@@ -145,8 +85,8 @@ function DemoOptions() {
         e.preventDefault();
         // setDisplay(!display);
         console.log("click");
-        document.body.className = "";
-        document.body.classList.add(color.className);
+        document.documentElement.className = "";
+        document.documentElement.classList.add(color.className);
     };
 
     return (
@@ -162,7 +102,7 @@ function DemoOptions() {
                         <span className="app-demo-options-subtitle">- Color Schemes</span>
                         <ul className="app-demo-options-colors">
                             {colors.map((item, index) => (
-                                <li key={index} style={{ backgroundColor: item.primary }} onClick={(e) => handleClickColor(e, item)}></li>
+                                <li key={index} style={{ backgroundColor: item.color }} onClick={(e) => handleClickColor(e, item)}></li>
                             ))}
                         </ul>
                     </div>
