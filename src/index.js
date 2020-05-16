@@ -11,10 +11,10 @@ import Demo from "./scenes/Demo";
 import Home from "./scenes/Home";
 
 const routes = [
-    {
-        path: "/",
-        component: <Demo />,
-    },
+    // {
+    //     path: "/",
+    //     component: <Demo />,
+    // },
     {
         path: "/home-1",
         component: <Home />,
@@ -26,7 +26,7 @@ const Root = () => {
         <BrowserRouter basename={"/"}>
             <Switch>
                 {routes.map((item, index) => (
-                    <Route key={index} path={`${item.path}`}>
+                    <Route key={index} path={`${item.path}`} exact={false}>
                         {item.component}
                     </Route>
                 ))}

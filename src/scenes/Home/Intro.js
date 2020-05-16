@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
+import { FaTwitter, FaGithub, FaVimeo } from "react-icons/fa";
 
 function Intro() {
     return (
@@ -31,6 +32,26 @@ function Intro() {
                             </button>
                         </Link>
                     </div>
+                </div>
+                <div class="hero-sidebar-links">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <FaTwitter />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <FaGithub />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <FaVimeo />
+                            </a>
+                        </li>
+                    </ul>
+                    <p>Follow Me</p>
                 </div>
             </div>
         </section>
