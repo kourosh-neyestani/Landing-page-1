@@ -1,44 +1,55 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 
 // Stylesheet
 import "./index.scss";
 
-// Scenes
-import Demo from "./scenes/Demo";
 import Home from "./scenes/Home";
 import Home2 from "./scenes/Home2";
 
-const routes = [
-    // {
-    //     path: "/",
-    //     component: <Demo />,
-    // },
-    {
-        path: "/home-1",
-        component: <Home />,
-    },
-    {
-        path: "/home-2",
-        component: <Home2 />,
-    },
-];
-
 const Root = () => {
     return (
-        <BrowserRouter basename={"/"}>
-            <Switch>
-                {routes.map((item, index) => (
-                    <Route key={index} path={`${item.path}`} exact={false}>
-                        {item.component}
+        <Router>
+            <div>
+                <ul>
+                    <li>
+                        <Link to="/">Demo</Link>
+                    </li>
+                    <li>
+                        <Link to="/home-1">home 1</Link>
+                    </li>
+                    <li>
+                        <Link to="/home-2">home 2</Link>
+                    </li>
+                </ul>
+
+                <hr />
+
+                <Switch>
+                    <Route exact path="/">
+                        <Demo />
                     </Route>
-                ))}
-            </Switch>
-        </BrowserRouter>
+                    <Route path="/home-1">
+                        <Home />
+                    </Route>
+                    <Route path="/home-2">
+                        <Home2 />
+                    </Route>
+                </Switch>
+            </div>
+        </Router>
     );
 };
+
+function Demo() {
+    return (
+        <div>
+            <h2>Demo</h2>
+        </div>
+    );
+}
 
 ReactDOM.render(<Root />, document.getElementById("root"));
 serviceWorker.unregister();

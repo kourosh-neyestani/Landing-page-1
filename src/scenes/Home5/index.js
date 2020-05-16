@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
-import ScrollAnimation from "react-animate-on-scroll";
 import { Route, useRouteMatch } from "react-router-dom";
 import { spring, AnimatedSwitch } from "react-router-transition";
 
 // Sections
-import Header from "./Header";
 import Blog from "./Blog";
 import About from "./About";
 import Intro from "./Intro";
+import Header from "./Header";
 import Service from "./Service";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
@@ -49,6 +48,33 @@ const routes = [
     },
 ];
 
+function Home() {
+    let { path } = useRouteMatch();
+
+    useEffect(() => {
+        document.documentElement.className = "home-5 skin-5";
+        return () => {
+            document.documentElement.className = "";
+        };
+    });
+
+    return (
+        <div>
+            <Header />
+            <AnimatedSwitch atEnter={bounceTransition.atEnter} atLeave={bounceTransition.atLeave} atActive={bounceTransition.atActive} mapStyles={mapStyles} className="route-wrapper">
+                <Route exact path={path}>
+                    <h3>Welcome to Home</h3>
+                </Route>
+                {routes.map((item, index) => (
+                    <Route key={index} path={`${path}${item.path}`}>
+                        {item.component}
+                    </Route>
+                ))}
+            </AnimatedSwitch>
+        </div>
+    );
+}
+
 function mapStyles(styles) {
     return {
         opacity: styles.opacity,
@@ -81,31 +107,5 @@ const bounceTransition = {
         rotate: bounce(0),
     },
 };
-
-function Home() {
-    let { path } = useRouteMatch();
-
-    useEffect(() => {
-        document.documentElement.className = "home-5 skin-5";
-        return () => {
-            document.documentElement.className = "";
-        };
-    });
-
-    return (
-        <>
-            <Header />
-            <AnimatedSwitch atEnter={bounceTransition.atEnter} atLeave={bounceTransition.atLeave} atActive={bounceTransition.atActive} mapStyles={mapStyles} className="route-wrapper">
-                {routes.map((item, index) => (
-                    <Route key={index} path={`${path}${item.path}`} exact>
-                        <ScrollAnimation animateIn="fadeIn" duration={1.26}>
-                            {item.component}
-                        </ScrollAnimation>
-                    </Route>
-                ))}
-            </AnimatedSwitch>
-        </>
-    );
-}
 
 export default Home;
