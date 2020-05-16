@@ -1,10 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Route, useRouteMatch } from "react-router-dom";
 import { spring, AnimatedSwitch } from "react-router-transition";
-
-// Skin
-// import "./skin.scss";
 
 // Sections
 import Header from "./Header";
@@ -14,36 +11,40 @@ import Intro from "./Intro";
 import Service from "./Service";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
+import SinglePost from "./SinglePost";
+import PortfolioDetails from "./PortfolioDetails";
 
 const routes = [
     {
-        link: `intro`,
-        title: "Intro",
+        path: "/intro",
         component: <Intro />,
     },
     {
-        link: "about",
-        title: "About Me",
+        path: "/about",
         component: <About />,
     },
     {
-        link: "service",
-        title: "Service",
+        path: "/service",
         component: <Service />,
     },
     {
-        link: "portfolio",
-        title: "Portfolio",
+        path: "/portfolio",
         component: <Portfolio />,
     },
     {
-        link: "blog",
-        title: "Blog",
+        path: "/portfolio/portfolio-details",
+        component: <PortfolioDetails />,
+    },
+    {
+        path: "/blog",
         component: <Blog />,
     },
     {
-        link: "contact",
-        title: "Contact",
+        path: "/blog/single-post",
+        component: <SinglePost />,
+    },
+    {
+        path: "/contact",
         component: <Contact />,
     },
 ];
@@ -84,19 +85,26 @@ const bounceTransition = {
 function Home() {
     let { path } = useRouteMatch();
 
+    useEffect(() => {
+        document.body.className = "home-4 skin-4";
+        return () => {
+            document.body.className = "";
+        };
+    });
+
     return (
-        <div>
+        <>
             <Header />
             <AnimatedSwitch atEnter={bounceTransition.atEnter} atLeave={bounceTransition.atLeave} atActive={bounceTransition.atActive} mapStyles={mapStyles} className="route-wrapper">
                 {routes.map((item, index) => (
-                    <Route exact path={`${path}/${item.link}`} key={index}>
+                    <Route key={index} path={`${path}${item.path}`} exact>
                         <ScrollAnimation animateIn="fadeIn" duration={1.26}>
                             {item.component}
                         </ScrollAnimation>
                     </Route>
                 ))}
             </AnimatedSwitch>
-        </div>
+        </>
     );
 }
 

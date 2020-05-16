@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Route, useRouteMatch } from "react-router-dom";
 import { spring, AnimatedSwitch } from "react-router-transition";
@@ -85,8 +85,15 @@ const bounceTransition = {
 function Home() {
     let { path } = useRouteMatch();
 
+    useEffect(() => {
+        document.body.className = "home-5 skin-5";
+        return () => {
+            document.body.className = "";
+        };
+    });
+
     return (
-        <div>
+        <>
             <Header />
             <AnimatedSwitch atEnter={bounceTransition.atEnter} atLeave={bounceTransition.atLeave} atActive={bounceTransition.atActive} mapStyles={mapStyles} className="route-wrapper">
                 {routes.map((item, index) => (
@@ -97,7 +104,7 @@ function Home() {
                     </Route>
                 ))}
             </AnimatedSwitch>
-        </div>
+        </>
     );
 }
 

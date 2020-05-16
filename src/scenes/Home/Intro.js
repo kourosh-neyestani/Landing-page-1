@@ -33,7 +33,7 @@ function Intro() {
                         </Link>
                     </div>
                 </div>
-                <div class="hero-sidebar-links">
+                <div className="hero-sidebar-links">
                     <ul>
                         <li>
                             <a href="#">

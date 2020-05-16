@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Helmet from "../../components/common/Helmet";
 
+import customHooks from "../../hooks/customHooks";
+
 const pages = [
     {
         title: "Home 1",
@@ -28,6 +30,7 @@ const colors = [
         primary_1: "brown",
         secondary: "orange",
         secondary_1: "orangered",
+        className: "body-skin-1",
     },
     {
         base_0: "red",
@@ -36,6 +39,7 @@ const colors = [
         primary_1: "brown",
         secondary: "orange",
         secondary_1: "orangered",
+        className: "body-skin-2",
     },
     {
         base_0: "red",
@@ -44,6 +48,7 @@ const colors = [
         primary_1: "brown",
         secondary: "orange",
         secondary_1: "orangered",
+        className: "body-skin-3",
     },
     {
         base_0: "red",
@@ -52,6 +57,7 @@ const colors = [
         primary_1: "brown",
         secondary: "orange",
         secondary_1: "orangered",
+        className: "body-skin-4",
     },
     {
         base_0: "red",
@@ -60,6 +66,7 @@ const colors = [
         primary_1: "brown",
         secondary: "orange",
         secondary_1: "orangered",
+        className: "body-skin-5",
     },
     {
         base_0: "red",
@@ -68,6 +75,7 @@ const colors = [
         primary_1: "brown",
         secondary: "orange",
         secondary_1: "orangered",
+        className: "body-skin-6",
     },
     {
         base_0: "red",
@@ -76,6 +84,7 @@ const colors = [
         primary_1: "brown",
         secondary: "orange",
         secondary_1: "orangered",
+        className: "body-skin-7",
     },
     {
         base_0: "red",
@@ -84,6 +93,7 @@ const colors = [
         primary_1: "brown",
         secondary: "orange",
         secondary_1: "orangered",
+        className: "body-skin-8",
     },
     {
         base_0: "red",
@@ -92,6 +102,7 @@ const colors = [
         primary_1: "brown",
         secondary: "orange",
         secondary_1: "orangered",
+        className: "body-skin-9",
     },
     {
         base_0: "red",
@@ -100,6 +111,7 @@ const colors = [
         primary_1: "brown",
         secondary: "orange",
         secondary_1: "orangered",
+        className: "body-skin-10",
     },
     {
         base_0: "red",
@@ -108,6 +120,7 @@ const colors = [
         primary_1: "brown",
         secondary: "orange",
         secondary_1: "orangered",
+        className: "body-skin-11",
     },
     {
         base_0: "red",
@@ -116,6 +129,7 @@ const colors = [
         primary_1: "brown",
         secondary: "orange",
         secondary_1: "orangered",
+        className: "body-skin-11",
     },
 ];
 
@@ -131,23 +145,8 @@ function DemoOptions() {
         e.preventDefault();
         // setDisplay(!display);
         console.log("click");
-        return (
-            <Helmet title="Antic">
-                <style type="text/css">{`
-                    :root {
-                        --base-0: ${color.base_0};
-                        --base-1: ${color.base_1};
-                        --primary: ${color.primary};
-                        --primary-1: ${color.primary_1};
-                        --secondary: ${color.secondary};
-                        --secondary-1: ${color.secondary_1};
-                    }
-                    body {
-                        background: blue !important;
-                    }
-                `}</style>
-            </Helmet>
-        );
+        document.body.className = "";
+        document.body.classList.add(color.className);
     };
 
     return (
