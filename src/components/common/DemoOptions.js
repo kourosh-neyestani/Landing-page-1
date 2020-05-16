@@ -1,24 +1,21 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Helmet from "../../components/common/Helmet";
-
-import customHooks from "../../hooks/customHooks";
 
 const pages = [
     {
         title: "Home 1",
         image: "/assets/images/demo/1.jpg",
-        link: "/home-1",
+        link: "/home-1/intro",
     },
     {
         title: "Home 2",
         image: "/assets/images/demo/2.jpg",
-        link: "/home-2",
+        link: "/home-2/intro",
     },
     {
         title: "Home 3",
         image: "/assets/images/demo/3.jpg",
-        link: "/home-3",
+        link: "/home-3/intro",
     },
 ];
 
@@ -83,7 +80,6 @@ function DemoOptions() {
 
     const handleClickColor = (e, color) => {
         e.preventDefault();
-        // setDisplay(!display);
         console.log("click");
         document.documentElement.className = "";
         document.documentElement.classList.add(color.className);
@@ -91,7 +87,6 @@ function DemoOptions() {
 
     return (
         <>
-            <Helmet title={`${display}`} />
             <div className={`app-demo-options ${display && "active"}`}>
                 <div className="app-demo-options-panel">
                     <div className="app-demo-options-close" onClick={(e) => handleClick(e)}>

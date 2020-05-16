@@ -77,6 +77,10 @@
         margin-right: 3px;
         border: 1px solid $primary;
 
+        .text {
+            top: -2px;
+            position: relative;
+        }
         .wave {
             opacity: 0;
         }

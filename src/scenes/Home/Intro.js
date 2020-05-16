@@ -25,7 +25,7 @@ function Intro() {
                     <div className="content">
                         <h1>BUILD YOUR BODY STRONG</h1>
                         <p>Lorem ipsum dolor sit amet consec tetur adipisicing elit.</p>
-                        <Link to="/home-1/about">
+                        <Link to={`/home-1/about`}>
                             <button className="button button-md button-light text-primary">
                                 <span className="wave"></span>
                                 <span className="text">About Me</span>
@@ -36,17 +36,17 @@ function Intro() {
                 <div className="hero-sidebar-links">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="/">
                                 <FaTwitter />
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="/">
                                 <FaGithub />
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="/">
                                 <FaVimeo />
                             </a>
                         </li>

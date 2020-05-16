@@ -31,7 +31,7 @@ const routes = [
         component: <Portfolio />,
     },
     {
-        path: "/portfolio/portfolio-details",
+        path: "/portfolio-details",
         component: <PortfolioDetails />,
     },
     {
@@ -39,7 +39,7 @@ const routes = [
         component: <Blog />,
     },
     {
-        path: "/blog/single-post",
+        path: "/single-post",
         component: <SinglePost />,
     },
     {

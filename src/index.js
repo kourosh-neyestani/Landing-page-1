@@ -6,6 +6,7 @@ import * as serviceWorker from "./serviceWorker";
 // Stylesheet
 import "./index.scss";
 
+import Demo from "./scenes/Demo";
 import Home from "./scenes/Home";
 import Home2 from "./scenes/Home2";
 
@@ -13,20 +14,6 @@ const Root = () => {
     return (
         <Router>
             <div>
-                <ul>
-                    <li>
-                        <Link to="/">Demo</Link>
-                    </li>
-                    <li>
-                        <Link to="/home-1">home 1</Link>
-                    </li>
-                    <li>
-                        <Link to="/home-2">home 2</Link>
-                    </li>
-                </ul>
-
-                <hr />
-
                 <Switch>
                     <Route exact path="/">
                         <Demo />
@@ -42,14 +29,6 @@ const Root = () => {
         </Router>
     );
 };
-
-function Demo() {
-    return (
-        <div>
-            <h2>Demo</h2>
-        </div>
-    );
-}
 
 ReactDOM.render(<Root />, document.getElementById("root"));
 serviceWorker.unregister();

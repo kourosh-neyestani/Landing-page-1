@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { Link, useRouteMatch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Container } from "react-grid-system";
 
 // Components
@@ -34,7 +34,6 @@ const posts = [
 ];
 
 function Blog() {
-    let { path } = useRouteMatch();
     let sliderSettings = {
         dots: true,
         speed: 500,
@@ -79,7 +78,7 @@ function Blog() {
                     <Slider className="el-slider el-slider-plr--15" {...sliderSettings}>
                         {posts.map((item, index) => (
                             <div key={index} className="post-item">
-                                <Link to={`${path}${item.link}`}>
+                                <Link to={`/home-1${item.link}`}>
                                     <div className="post-image bg-primary">
                                         <img src={item.image} alt={item.title} />
                                     </div>
@@ -87,7 +86,7 @@ function Blog() {
                                 <div className="post-content">
                                     <div className="post-data">
                                         <h4 className="post-title">
-                                            <Link to={`${path}${item.link}`}>{item.title}</Link>
+                                            <Link to={`/home-1${item.link}`}>{item.title}</Link>
                                         </h4>
                                         <div className="post-date">
                                             <i className="ti-time"></i>

@@ -3,21 +3,21 @@ import { Container, Row, Col } from "react-grid-system";
 
 const demos = [
     {
-        hover: true,
-        link: "/home-1",
+        link: "/home-1/intro",
         title: "Demo 1",
+        hover: true,
         image: "/assets/images/demo/1.jpg",
     },
     {
-        hover: true,
-        link: "/home-2",
+        link: "/home-2/intro",
         title: "Demo 2",
+        hover: true,
         image: "/assets/images/demo/2.jpg",
     },
     {
-        hover: true,
-        link: "/home-3",
+        link: "/home-3/intro",
         title: "Demo 3",
+        hover: true,
         image: "/assets/images/demo/3.jpg",
     },
 ];
@@ -84,12 +84,12 @@ function Demo() {
         <div className="theme-preview">
             <header className="theme-preview-header">
                 <div className="header-logo">
-                    <a href="#">NUXT</a>
+                    <a href="/">NUXT</a>
                 </div>
-                <button type="button" className="button button-lg button-primary">
+                <a href="/" className="button button-lg button-primary">
                     <span className="wave"></span>
-                    <span className="text">BYU NOW</span>
-                </button>
+                    <span className="text">BUY NOW</span>
+                </a>
             </header>
             <div className="theme-preview-hero">
                 <Container className="container">
@@ -102,13 +102,13 @@ function Demo() {
                                         <h1>Creating Easier Solutions</h1>
                                         <p>Let's Work Together. We can help to develop your business. We provide the best service that comes with the best results.</p>
                                     </header>
-                                    <button type="button" className="button button-lg button-line-light text-primary">
+                                    <a href="/home-1/intro" className="button button-lg button-line-light text-primary">
                                         <span className="text">LIVE DEMO</span>
-                                    </button>
-                                    <button type="button" className="button button-lg button-primary">
+                                    </a>
+                                    <a href="/" className="button button-lg button-primary">
                                         <span className="wave"></span>
                                         <span className="text">PURCHASE</span>
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </Col>
@@ -218,7 +218,7 @@ function Demo() {
                         <br />
                         site with <span>Nuxt</span> Template!
                     </h4>
-                    <a href="#" className="button button-md button-primary">
+                    <a href="/" className="button button-md button-primary">
                         <span className="wave"></span>
                         <span className="text">PURCHASE NOW</span>
                     </a>
@@ -235,7 +235,7 @@ function Demo() {
                             {features.map((item, index) => (
                                 <Col key={index} xs={12} md={12} lg={6} xl={4}>
                                     <div className="item">
-                                        <div className="image overlay-image" style={{backgroundImage: `url(${item.image})`}}></div>
+                                        <div className="image overlay-image" style={{ backgroundImage: `url(${item.image})` }}></div>
                                         <h4>{item.title}</h4>
                                         <p>{item.subtitle}</p>
                                     </div>
