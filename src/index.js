@@ -9,6 +9,7 @@ import "./index.scss";
 // Scenes
 import Demo from "./scenes/Demo";
 import Home from "./scenes/Home";
+import Home2 from "./scenes/Home2";
 
 const routes = [
     // {
@@ -18,6 +19,10 @@ const routes = [
     {
         path: "/home-1",
         component: <Home />,
+    },
+    {
+        path: "/home-2",
+        component: <Home2 />,
     },
 ];
 

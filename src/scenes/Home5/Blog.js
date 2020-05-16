@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { Link, useRouteMatch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Container } from "react-grid-system";
 
 // Components
@@ -34,7 +34,6 @@ const posts = [
 ];
 
 function Blog() {
-    let { path } = useRouteMatch();
     let sliderSettings = {
         dots: true,
         speed: 500,
@@ -71,15 +70,15 @@ function Blog() {
     };
 
     return (
-        <section className="section section-blog section-blog-1 bg-gradient-side overlay-color">
+        <section className="section section-blog section-blog-2 bg-gradient-side overlay-color">
             <span className="bg-color bg-dark-60"></span>
             <div className="display-spacing">
                 <Container className="container">
-                    <Headline label="Blog" title="Latest Blog Posts/News" divider_1={true} position="center" />
+                    <Headline title="Latest Blog Posts/News" divider_1={true} position="center"/>
                     <Slider className="el-slider el-slider-plr--15" {...sliderSettings}>
                         {posts.map((item, index) => (
                             <div key={index} className="post-item">
-                                <Link to={`${path}${item.link}`}>
+                                <Link to={item.link}>
                                     <div className="post-image bg-primary">
                                         <img src={item.image} alt={item.title} />
                                     </div>
@@ -87,7 +86,7 @@ function Blog() {
                                 <div className="post-content">
                                     <div className="post-data">
                                         <h4 className="post-title">
-                                            <Link to={`${path}${item.link}`}>{item.title}</Link>
+                                            <Link to={item.link}>{item.title}</Link>
                                         </h4>
                                         <div className="post-date">
                                             <i className="ti-time"></i>

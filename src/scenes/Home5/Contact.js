@@ -8,33 +8,11 @@ import Headline from "../../components/common/Headline";
 
 function Contact() {
     return (
-        <section className="section section-contact section-contact-1 display-fit-screen">
-            <div className="section-inner-sidebar overlay-image" style={{ backgroundImage: `url(/assets/images/contact/1.jpg)` }}>
-                <div className="social-links">
-                    <ul>
-                        <li>
-                            <a href="/#">
-                                <FaTwitter />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/#">
-                                <FaGithub />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/#">
-                                <FaVimeo />
-                            </a>
-                        </li>
-                    </ul>
-                    <p>Follow Me:</p>
-                </div>
-            </div>
-            <div className="section-inner-content">
-                <div className="display-spacing">
-                    <Container className="container">
-                        <Headline title="Get In Touch" divider_2={true} subtitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua. Ut enim ad minim enim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+        <section className="section section-contact section-contact-2">
+            <div className="display-spacing">
+                <Container className="container">
+                    <div className="max-w-992 div-center">
+                        <Headline position="center" title="Get In Touch" divider_2={true} subtitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua. Ut enim ad minim enim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
                         <form className="form form-1">
                             <Row>
                                 <Col xs={12} sm={12} md={6}>
@@ -76,8 +54,8 @@ function Contact() {
                                 </Icon>
                             </Col>
                         </Row>
-                    </Container>
-                </div>
+                    </div>
+                </Container>
             </div>
         </section>
     );
