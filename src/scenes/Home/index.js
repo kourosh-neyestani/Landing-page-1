@@ -86,9 +86,9 @@ function Home() {
     let { path } = useRouteMatch();
 
     useEffect(() => {
-        document.body.className = "home-1 skin-1";
+        document.documentElement.className = "home-1 skin-1";
         return () => {
-            document.body.className = "";
+            document.documentElement.className = "";
         };
     });
 
