@@ -1,6 +1,5 @@
 import React from "react";
 import TextLoop from "react-text-loop";
-import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-grid-system";
 
 function Intro() {
