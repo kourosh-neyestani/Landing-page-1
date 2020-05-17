@@ -20,6 +20,18 @@ const demos = [
         hover: true,
         image: "/assets/images/demo/3.jpg",
     },
+    {
+        link: "/home-4/intro",
+        title: "Demo 4",
+        hover: true,
+        image: "/assets/images/demo/4.jpg",
+    },
+    {
+        link: "/home-5/intro",
+        title: "Demo 5",
+        hover: true,
+        image: "/assets/images/demo/5.jpg",
+    },
 ];
 
 const features = [
@@ -186,23 +198,31 @@ function Demo() {
                                 <div className="item">
                                     <img src="/assets/images/demo/0.jpg" alt="Coming Soon" />
                                     <h4>
-                                        Demo 4 <small>| Coming Soon</small>
-                                    </h4>
-                                </div>
-                            </Col>
-                            <Col xs={12} md={12} lg={6} xl={4}>
-                                <div className="item">
-                                    <img src="/assets/images/demo/0.jpg" alt="Coming Soon" />
-                                    <h4>
-                                        Demo 5 <small>| Coming Soon</small>
-                                    </h4>
-                                </div>
-                            </Col>
-                            <Col xs={12} md={12} lg={6} xl={4}>
-                                <div className="item">
-                                    <img src="/assets/images/demo/0.jpg" alt="Coming Soon" />
-                                    <h4>
                                         Demo 6 <small>| Coming Soon</small>
+                                    </h4>
+                                </div>
+                            </Col>
+                            <Col xs={12} md={12} lg={6} xl={4}>
+                                <div className="item">
+                                    <img src="/assets/images/demo/0.jpg" alt="Coming Soon" />
+                                    <h4>
+                                        Demo 7 <small>| Coming Soon</small>
+                                    </h4>
+                                </div>
+                            </Col>
+                            <Col xs={12} md={12} lg={6} xl={4}>
+                                <div className="item">
+                                    <img src="/assets/images/demo/0.jpg" alt="Coming Soon" />
+                                    <h4>
+                                        Demo 8 <small>| Coming Soon</small>
+                                    </h4>
+                                </div>
+                            </Col>
+                            <Col xs={12} md={12} lg={6} xl={4}>
+                                <div className="item">
+                                    <img src="/assets/images/demo/0.jpg" alt="Coming Soon" />
+                                    <h4>
+                                        Demo 9 <small>| Coming Soon</small>
                                     </h4>
                                 </div>
                             </Col>

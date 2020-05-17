@@ -162,7 +162,9 @@
 .section-resume-1 .resume-light h4,
 .section-resume-1 .resume-light h5,
 .section-resume-1 .resume-light h6,
-.section-resume-1 .resume-light .el-icon-inner {
+.section-resume-1 .resume-light .el-icon-inner,
+.section-resume-1 .resume-light .el-icon-title,
+.section-resume-1 .resume-light .el-icon-subtitle {
     color: $base-0;
 }
 .section-resume-1 .resume-light ul li:before,
@@ -255,16 +257,17 @@
             margin-bottom: 25px;
         }
         h2 {
-            color: $primary;
+            color: $black;
             font-size: 50px;
             font-weight: 700;
             line-height: 1.1;
         }
         h3 {
-            color: $primary;
+            color: $black;
             font-size: 50px;
             font-weight: 700;
             line-height: 1.1;
+            margin-bottom: 39px;
         }
     }
     .my-avatar {
@@ -274,8 +277,6 @@
         border-radius: 50%;
         margin: auto;
         margin-bottom: 30px;
-        border-left: 3px solid $primary;
-        border-bottom: 3px solid $primary;
     }
     .my-resume {
         top: 0;
@@ -297,8 +298,42 @@
     .el-scorll {
         bottom: -150px !important;
     }
+    .section-resume-1 {
+        .box {
+            background-color: $white;
+        }
+    }
+    .el-scroll {
+        border-color: $black;
+        &:before {
+            background-color: $black;
+        }
+    }
+    .el-scroll-line {
+        background-color: $black;
+    }
+    &.section-about-1 {
+        .about-me {
+            p {
+            }
+            h2 {
+                color: $primary;
+            }
+            h3 {
+                color: $primary;
+            }
+        }
+        .el-scroll {
+            border-color: $white;
+            &:before {
+                background-color: $white;
+            }
+        }
+        .el-scroll-line {
+            background-color: $white !important;
+        }
+    }
 }
-
 // About 2
 .section-about-2 {
     .my-avatar {
@@ -357,6 +392,14 @@
     }
     .section-resume-1 .section-title-3 h5 span {
         font-size: 12px;
+    }
+    .section-about-6 {
+        .about-me {
+            h2,
+            h3 {
+                font-size: 24px !important;
+            }
+        }
     }
 }
 

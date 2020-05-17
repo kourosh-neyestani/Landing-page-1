@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 
 const pages = [
     {
+        title: "All Demos",
+        image: "/assets/images/demo/demos.jpg",
+        link: "/",
+    },
+    {
         title: "Home 1",
         image: "/assets/images/demo/1.jpg",
         link: "/home-1/intro",
@@ -21,6 +26,11 @@ const pages = [
         title: "Home 4",
         image: "/assets/images/demo/4.jpg",
         link: "/home-4/intro",
+    },
+    {
+        title: "Home 5",
+        image: "/assets/images/demo/5.jpg",
+        link: "/home-5/intro",
     },
 ];
 

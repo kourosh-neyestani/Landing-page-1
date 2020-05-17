@@ -11,6 +11,7 @@ import Home from "./scenes/Home";
 import Home2 from "./scenes/Home2";
 import Home3 from "./scenes/Home3";
 import Home4 from "./scenes/Home4";
+import Home5 from "./scenes/Home5";
 
 const Root = () => {
     return (
@@ -31,6 +32,9 @@ const Root = () => {
                     </Route>
                     <Route path="/home-4">
                         <Home4 />
+                    </Route>
+                    <Route path="/home-5">
+                        <Home5 />
                     </Route>
                 </Switch>
             </div>

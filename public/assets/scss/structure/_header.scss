@@ -176,6 +176,25 @@
     }
 }
 
+// Header 5
+.home-5 {
+    .app-header {
+        .header-nav {
+            li {
+                .active {
+                    color: $black !important;
+                    font-weight: 700 !important;
+                    
+                    &:before {
+                        border-color: $black;
+                        background-color: $black !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1024px) {
     .app-header {
         .header-nav {

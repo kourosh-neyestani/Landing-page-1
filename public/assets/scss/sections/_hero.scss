@@ -159,6 +159,47 @@
     }
 }
 
+// Hero5
+.section-hero-5 {
+    .el-heading {
+        margin-bottom: 30px;
+
+        h1 {
+            font-size: 50px;
+            line-height: 1.4;
+
+            span {
+                color: $white;
+            }
+        }
+        .label {
+            position: relative;
+            padding-left: 21px;
+
+            span {
+                z-index: 3;
+                color: $black;
+                position: relative;
+            }
+            &:after {
+                left: 0;
+                top: -7px;
+                width: 36px;
+                height: 36px;
+                content: "";
+                position: absolute;
+                border-radius: 50%;
+                background-color: $primary;
+            }
+        }
+    }
+    .el-heading-line {
+        padding: 90px 45px 60px;
+        border: 2px solid #fff;
+        margin-right: 75px;
+    }
+}
+
 @media (max-width: 1500px) {
     .section-hero-1 {
         .hero-sidebar {
@@ -194,6 +235,11 @@
             width: 450px !important;
             height: 450px !important;
             top: -120px !important;
+        }
+    }
+    .section-hero-5 {
+        .el-heading-line {
+            margin: 0 !important
         }
     }
 }
