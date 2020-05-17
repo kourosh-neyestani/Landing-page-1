@@ -31,7 +31,7 @@ const routes = [
         component: <Portfolio />,
     },
     {
-        path: "/portfolio/portfolio-details",
+        path: "/portfolio-details",
         component: <PortfolioDetails />,
     },
     {
@@ -39,7 +39,7 @@ const routes = [
         component: <Blog />,
     },
     {
-        path: "/blog/single-post",
+        path: "/single-post",
         component: <SinglePost />,
     },
     {
@@ -52,7 +52,7 @@ function Home() {
     let { path } = useRouteMatch();
 
     useEffect(() => {
-        document.documentElement.className = "home-5 skin-5";
+        document.documentElement.className = "home-4 skin-4";
         return () => {
             document.documentElement.className = "";
         };

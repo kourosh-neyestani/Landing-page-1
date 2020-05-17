@@ -3,7 +3,7 @@
 ------------------------------------*/
 .section-hero {
     overflow: hidden;
-    
+
     .slick-dots {
         z-index: 33;
         bottom: 60px;
@@ -110,12 +110,24 @@
             right: 0;
             width: 600px;
             height: 600px;
-            opacity: .45;
+            opacity: 0.45;
             margin: 0 auto;
             position: absolute;
             border-radius: 50%;
             background-color: $primary;
             animation: music 1500ms infinite;
+        }
+        .el-shape-square {
+            top: -180px;
+            left: 0;
+            right: 0;
+            width: 600px;
+            height: 600px;
+            opacity: 0.6;
+            margin: 0 auto;
+            position: absolute;
+            background-color: $base-0;
+            animation: home-4 4500ms infinite;
         }
     }
     .button {
@@ -127,6 +139,23 @@
                 visibility: visible;
             }
         }
+    }
+}
+
+// Hero 4
+.section-hero-4 {
+    .el-slider {
+        width: 100%;
+        height: 100vh;
+
+        .slide {
+            .image {
+                height: 100vh;
+            }
+        }
+    }
+    .display-center {
+        z-index: 3;
     }
 }
 
@@ -160,6 +189,7 @@
         }
     }
     .section-hero-3 {
+        .el-shape-square,
         .el-shape-circle {
             width: 450px !important;
             height: 450px !important;
@@ -193,6 +223,7 @@
         }
     }
     .section-hero-3 {
+        .el-shape-square,
         .el-shape-circle {
             width: 300px !important;
             height: 300px !important;

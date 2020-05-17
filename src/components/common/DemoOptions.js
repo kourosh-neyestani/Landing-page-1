@@ -17,6 +17,11 @@ const pages = [
         image: "/assets/images/demo/3.jpg",
         link: "/home-3/intro",
     },
+    {
+        title: "Home 4",
+        image: "/assets/images/demo/4.jpg",
+        link: "/home-4/intro",
+    },
 ];
 
 const colors = [

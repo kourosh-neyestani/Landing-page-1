@@ -14,57 +14,57 @@ const portfolio = [
                 title: "Crearive Design",
                 link: "/portfolio-details",
                 subtitle: "Web Design",
-                image: "/assets/images/portfolio/1-1.jpg",
-                thumbnail: "/assets/images/portfolio/1-1.jpg",
+                image: "/assets/images/portfolio/4-1.jpg",
+                thumbnail: "/assets/images/portfolio/4-1.jpg",
             },
             {
                 title: "Crearive Design",
                 link: "/portfolio-details",
                 subtitle: "Web Design",
-                image: "/assets/images/portfolio/1-2.jpg",
-                thumbnail: "/assets/images/portfolio/1-2.jpg",
+                image: "/assets/images/portfolio/4-2.jpg",
+                thumbnail: "/assets/images/portfolio/4-2.jpg",
             },
             {
                 title: "Crearive Design",
                 link: "/portfolio-details",
                 subtitle: "Web Design",
-                image: "/assets/images/portfolio/1-3.jpg",
-                thumbnail: "/assets/images/portfolio/1-3.jpg",
+                image: "/assets/images/portfolio/4-3.jpg",
+                thumbnail: "/assets/images/portfolio/4-3.jpg",
             },
             {
                 title: "Crearive Design",
                 subtitle: "Web Design",
                 link: "/portfolio-details",
-                image: "/assets/images/portfolio/1-4.jpg",
-                thumbnail: "/assets/images/portfolio/1-4.jpg",
+                image: "/assets/images/portfolio/4-4.jpg",
+                thumbnail: "/assets/images/portfolio/4-4.jpg",
             },
             {
                 title: "Crearive Design",
                 subtitle: "Web Design",
                 link: "/portfolio-details",
-                image: "/assets/images/portfolio/1-5.jpg",
-                thumbnail: "/assets/images/portfolio/1-5.jpg",
+                image: "/assets/images/portfolio/4-5.jpg",
+                thumbnail: "/assets/images/portfolio/4-5.jpg",
             },
             {
                 title: "Crearive Design",
                 subtitle: "Web Design",
                 link: "/portfolio-details",
-                image: "/assets/images/portfolio/1-6.jpg",
-                thumbnail: "/assets/images/portfolio/1-6.jpg",
+                image: "/assets/images/portfolio/4-6.jpg",
+                thumbnail: "/assets/images/portfolio/4-6.jpg",
             },
             {
                 title: "Crearive Design",
                 subtitle: "Web Design",
                 link: "/portfolio-details",
-                image: "/assets/images/portfolio/1-7.jpg",
-                thumbnail: "/assets/images/portfolio/1-7.jpg",
+                image: "/assets/images/portfolio/4-7.jpg",
+                thumbnail: "/assets/images/portfolio/4-7.jpg",
             },
             {
                 title: "Crearive Design",
                 subtitle: "Web Design",
                 link: "/portfolio-details",
-                image: "/assets/images/portfolio/1-8.jpg",
-                thumbnail: "/assets/images/portfolio/1-8.jpg",
+                image: "/assets/images/portfolio/4-8.jpg",
+                thumbnail: "/assets/images/portfolio/4-8.jpg",
             },
         ],
     },
@@ -75,22 +75,22 @@ const portfolio = [
                 title: "Crearive Design",
                 link: "/portfolio-details",
                 subtitle: "Web Design",
-                image: "/assets/images/portfolio/1-1.jpg",
-                thumbnail: "/assets/images/portfolio/1-1.jpg",
+                image: "/assets/images/portfolio/4-1.jpg",
+                thumbnail: "/assets/images/portfolio/4-1.jpg",
             },
             {
                 title: "Crearive Design",
                 link: "/portfolio-details",
                 subtitle: "Web Design",
-                image: "/assets/images/portfolio/1-2.jpg",
-                thumbnail: "/assets/images/portfolio/1-2.jpg",
+                image: "/assets/images/portfolio/4-2.jpg",
+                thumbnail: "/assets/images/portfolio/4-2.jpg",
             },
             {
                 title: "Crearive Design",
                 link: "/portfolio-details",
                 subtitle: "Web Design",
-                image: "/assets/images/portfolio/1-3.jpg",
-                thumbnail: "/assets/images/portfolio/1-3.jpg",
+                image: "/assets/images/portfolio/4-3.jpg",
+                thumbnail: "/assets/images/portfolio/4-3.jpg",
             },
         ],
     },
@@ -101,22 +101,22 @@ const portfolio = [
                 title: "Crearive Design",
                 subtitle: "Web Design",
                 link: "/portfolio-details",
-                image: "/assets/images/portfolio/1-4.jpg",
-                thumbnail: "/assets/images/portfolio/1-4.jpg",
+                image: "/assets/images/portfolio/4-4.jpg",
+                thumbnail: "/assets/images/portfolio/4-4.jpg",
             },
             {
                 title: "Crearive Design",
                 subtitle: "Web Design",
                 link: "/portfolio-details",
-                image: "/assets/images/portfolio/1-5.jpg",
-                thumbnail: "/assets/images/portfolio/1-5.jpg",
+                image: "/assets/images/portfolio/4-5.jpg",
+                thumbnail: "/assets/images/portfolio/4-5.jpg",
             },
             {
                 title: "Crearive Design",
                 subtitle: "Web Design",
                 link: "/portfolio-details",
-                image: "/assets/images/portfolio/1-6.jpg",
-                thumbnail: "/assets/images/portfolio/1-6.jpg",
+                image: "/assets/images/portfolio/4-6.jpg",
+                thumbnail: "/assets/images/portfolio/4-6.jpg",
             },
         ],
     },
@@ -127,22 +127,22 @@ const portfolio = [
                 title: "Crearive Design",
                 subtitle: "Web Design",
                 link: "/portfolio-details",
-                image: "/assets/images/portfolio/1-7.jpg",
-                thumbnail: "/assets/images/portfolio/1-7.jpg",
+                image: "/assets/images/portfolio/4-7.jpg",
+                thumbnail: "/assets/images/portfolio/4-7.jpg",
             },
             {
                 title: "Crearive Design",
                 subtitle: "Web Design",
                 link: "/portfolio-details",
-                image: "/assets/images/portfolio/1-8.jpg",
-                thumbnail: "/assets/images/portfolio/1-8.jpg",
+                image: "/assets/images/portfolio/4-8.jpg",
+                thumbnail: "/assets/images/portfolio/4-8.jpg",
             },
             {
                 title: "Crearive Design",
                 subtitle: "Web Design",
                 link: "/portfolio-details",
-                image: "/assets/images/portfolio/1-9.jpg",
-                thumbnail: "/assets/images/portfolio/1-9.jpg",
+                image: "/assets/images/portfolio/4-9.jpg",
+                thumbnail: "/assets/images/portfolio/4-9.jpg",
             },
         ],
     },
@@ -150,7 +150,7 @@ const portfolio = [
 
 function Portfolio() {
     return (
-        <section className="section section-portfolio section-portfolio-2 bg-gradient-side overlay-color">
+        <section className="section section-portfolio section-portfolio-1 bg-gradient-side overlay-color">
             <span className="bg-color bg-dark-60"></span>
             <div className="display-spacing">
                 <Container className="container">
@@ -167,7 +167,7 @@ function Portfolio() {
                                     {category.items.map((item, index) => (
                                         <Col key={index} xs={6} sm={6} md={6} lg={3} xl={3}>
                                             <div className="portfolio-item">
-                                                <Link to={item.link}>
+                                                <Link to={`/home-4${item.link}`}>
                                                     <div className="portfolio-card">
                                                         <div className="image overlay-image" style={{ backgroundImage: `url(${item.image})` }} />
                                                         <div className="content">

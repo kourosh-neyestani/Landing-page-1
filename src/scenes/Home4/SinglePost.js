@@ -8,7 +8,7 @@ import Headline from "../../components/common/Headline";
 function BlogDetails(props) {
     return (
         <div className="section section-details section-blog-details display-fit-screen">
-            <div className="section-inner-sidebar overlay-image" style={{ backgroundImage: `url(/assets/images/blog/1.jpg)` }}></div>
+            <div className="section-inner-sidebar overlay-image" style={{ backgroundImage: `url(/assets/images/blog/4.jpg)` }}></div>
             <div className="section-inner-content">
                 <div className="display-spacing">
                     <Container>

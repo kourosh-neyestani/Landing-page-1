@@ -9,25 +9,25 @@ import Headline from "../../components/common/Headline";
 const posts = [
     {
         title: "What has happened to all of the Design ideas?",
-        image: "/assets/images/blog/1-1.jpg",
+        image: "/assets/images/blog/4-1.jpg",
         date: "May 15th, 2019",
         link: "/single-post",
     },
     {
         title: "The Best Sale Marketer Of The Next Year",
-        image: "/assets/images/blog/1-2.jpg",
+        image: "/assets/images/blog/4-2.jpg",
         date: "May 18th, 2019",
         link: "/single-post",
     },
     {
         title: "What gets in the way of greate Stategy",
-        image: "/assets/images/blog/1-3.jpg",
+        image: "/assets/images/blog/4-3.jpg",
         date: "May 21h, 2019",
         link: "/single-post",
     },
     {
         title: "How to create great logo for your Business",
-        image: "/assets/images/blog/1-4.jpg",
+        image: "/assets/images/blog/4-4.jpg",
         date: "May 21th, 2019",
         link: "/single-post",
     },
@@ -70,15 +70,15 @@ function Blog() {
     };
 
     return (
-        <section className="section section-blog section-blog-2 bg-gradient-side overlay-color">
+        <section className="section section-blog section-blog-1 bg-gradient-side overlay-color">
             <span className="bg-color bg-dark-60"></span>
             <div className="display-spacing">
                 <Container className="container">
-                    <Headline title="Latest Blog Posts/News" divider_1={true} position="center"/>
+                    <Headline label="Blog" title="Latest Blog Posts/News" divider_1={true} position="center" />
                     <Slider className="el-slider el-slider-plr--15" {...sliderSettings}>
                         {posts.map((item, index) => (
                             <div key={index} className="post-item">
-                                <Link to={item.link}>
+                                <Link to={`/home-4${item.link}`}>
                                     <div className="post-image bg-primary">
                                         <img src={item.image} alt={item.title} />
                                     </div>
@@ -86,7 +86,7 @@ function Blog() {
                                 <div className="post-content">
                                     <div className="post-data">
                                         <h4 className="post-title">
-                                            <Link to={item.link}>{item.title}</Link>
+                                            <Link to={`/home-4${item.link}`}>{item.title}</Link>
                                         </h4>
                                         <div className="post-date">
                                             <i className="ti-time"></i>

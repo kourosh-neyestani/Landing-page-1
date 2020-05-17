@@ -166,6 +166,15 @@
     }
 }
 
+// Header 4
+.app-header-4 {
+    .header-logo {
+        a {
+            border-bottom: 6px solid $primary;
+        }
+    }
+}
+
 @media (max-width: 1024px) {
     .app-header {
         .header-nav {
