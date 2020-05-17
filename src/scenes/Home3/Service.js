@@ -94,7 +94,7 @@ function Service() {
     return (
         <section className="section section-service section-service-1 display-fit-screen">
             <div className="display-full-screen">
-                <div className="overlay-image" style={{ backgroundImage: `url(/assets/images/service/1.jpg)` }}>
+                <div className="overlay-image" style={{ backgroundImage: `url(/assets/images/service/3.jpg)` }}>
                     <Slider className="el-slider" {...sliderSettings}>
                         {service.map((item, index) => (
                             <div className="item box" key={index}>

@@ -1,6 +1,14 @@
 /*------------------------------------
     Hero
 ------------------------------------*/
+.section-hero {
+    overflow: hidden;
+    
+    .slick-dots {
+        z-index: 33;
+        bottom: 60px;
+    }
+}
 
 // Hero 1
 .section-hero-1 {
@@ -76,6 +84,52 @@
     }
 }
 
+// Hero 3
+.section-hero-3 {
+    .el-heading {
+        z-index: 3;
+        position: relative;
+        margin-bottom: 30px !important;
+    }
+    .el-slider {
+        width: 100%;
+        height: 100vh;
+
+        .slide {
+            .image {
+                height: 100vh;
+            }
+        }
+    }
+    .display-center {
+        z-index: 1;
+
+        .el-shape-circle {
+            top: -180px;
+            left: 0;
+            right: 0;
+            width: 600px;
+            height: 600px;
+            opacity: .45;
+            margin: 0 auto;
+            position: absolute;
+            border-radius: 50%;
+            background-color: $primary;
+            animation: music 1500ms infinite;
+        }
+    }
+    .button {
+        .wave {
+            visibility: hidden;
+        }
+        &:hover {
+            .wave {
+                visibility: visible;
+            }
+        }
+    }
+}
+
 @media (max-width: 1500px) {
     .section-hero-1 {
         .hero-sidebar {
@@ -105,6 +159,13 @@
             width: 64%;
         }
     }
+    .section-hero-3 {
+        .el-shape-circle {
+            width: 450px !important;
+            height: 450px !important;
+            top: -120px !important;
+        }
+    }
 }
 @media (max-width: 870px) {
     .section-hero-1 {
@@ -129,6 +190,13 @@
         }
         .hero-content {
             width: 100%;
+        }
+    }
+    .section-hero-3 {
+        .el-shape-circle {
+            width: 300px !important;
+            height: 300px !important;
+            top: -45px !important;
         }
     }
 }

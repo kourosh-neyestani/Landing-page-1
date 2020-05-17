@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 
 // Stylesheet
@@ -9,6 +9,7 @@ import "./index.scss";
 import Demo from "./scenes/Demo";
 import Home from "./scenes/Home";
 import Home2 from "./scenes/Home2";
+import Home3 from "./scenes/Home3";
 
 const Root = () => {
     return (
@@ -23,6 +24,9 @@ const Root = () => {
                     </Route>
                     <Route path="/home-2">
                         <Home2 />
+                    </Route>
+                    <Route path="/home-3">
+                        <Home3 />
                     </Route>
                 </Switch>
             </div>

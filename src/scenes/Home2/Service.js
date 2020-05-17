@@ -45,7 +45,7 @@ const service = [
 
 function Service() {
     let sliderSettings = {
-        dots: false,
+        dots: true,
         speed: 500,
         arrows: false,
         infinite: false,

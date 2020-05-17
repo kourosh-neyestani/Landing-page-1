@@ -55,6 +55,7 @@
                     &:before {
                         color: $primary;
                         border-color: $primary;
+                        background-color: $primary;
                     }
                 }
             }
@@ -201,7 +202,7 @@
         margin-bottom: 15px;
     }
     &.el-heading-center {
-        max-width: $sm;
+        max-width: $md;
         text-align: center;
         margin: 0 auto 100px;
     }

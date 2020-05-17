@@ -4,10 +4,16 @@ import { Link } from "react-router-dom";
 import { FaTwitter, FaGithub, FaVimeo } from "react-icons/fa";
 
 function Intro() {
+    const sliderSettings = {
+        dots: true,
+        arrow: false,
+        autoplay: true
+    }
+
     return (
         <section className="section section-hero section-hero-1 display-fit-screen">
             <div className="hero-content">
-                <Slider className="el-slider">
+                <Slider className="el-slider" {...sliderSettings}>
                     <div className="slide">
                         <div className="image overlay-image" style={{ backgroundImage: `url(/assets/images/hero/1-1.jpg)` }}></div>
                     </div>

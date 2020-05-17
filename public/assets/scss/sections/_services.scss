@@ -2,6 +2,14 @@
     Section: Service
 ------------------------------------*/
 
+.section-service {
+    .slick-dots {
+        z-index: 33;
+        bottom: 40px;
+    }
+}
+
+// Service 1
 .section-service-1 {
     max-height: 100vh !important;
 
