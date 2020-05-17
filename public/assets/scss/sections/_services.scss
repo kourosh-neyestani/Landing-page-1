@@ -202,22 +202,15 @@
 
 // Service 2
 .section-service-5 {
-    max-height: 100vh !important;
-
     .box {
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
         position: relative;
-        border: 0;
-        outline: 0;
     }
     .service-item {
         z-index: 3;
         position: relative;
-        padding-top: 140%;
-        border: 1px solid #fff;
+        padding: 20px;
         border-radius: 12px;
+        border: 1px solid #000;
         &:after {
             top: 0;
             right: 0;
@@ -269,6 +262,10 @@
                 }
             }
         }
+    }
+    .slick-dots {
+        z-index: 33;
+        bottom: -30px;
     }
 }
 

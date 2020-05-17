@@ -45,41 +45,6 @@ const posts = [
 ];
 
 function Blog() {
-    let sliderSettings = {
-        dots: true,
-        speed: 500,
-        arrows: false,
-        infinite: false,
-        initialSlide: 0,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        centerPadding: 30,
-        draggable: false,
-        responsive: [
-            {
-                breakpoint: 1500,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                },
-            },
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                },
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                },
-            },
-        ],
-    };
-
     return (
         <section className="section section-blog section-blog-3 bg-gradient-side overlay-color">
             <span className="bg-color bg-dark-60"></span>

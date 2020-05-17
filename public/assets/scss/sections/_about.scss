@@ -241,6 +241,63 @@
         }
     }
 }
+// About 6
+.section-about-6 {
+    .bg-color {
+        background-color: $base-0;
+    }
+    .about-me {
+        text-align: center;
+        p {
+            font-size: 16px;
+            max-width: 600px;
+            margin: auto;
+            margin-bottom: 25px;
+        }
+        h2 {
+            color: $primary;
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+        h3 {
+            color: $primary;
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+    }
+    .my-avatar {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: auto;
+        margin-bottom: 30px;
+        border-left: 3px solid $primary;
+        border-bottom: 3px solid $primary;
+    }
+    .my-resume {
+        top: 0;
+        position: relative;
+        padding-bottom: 100px;
+        &:before {
+            top: -100px !important;
+            bottom: 200px !important;
+        }
+        &:after {
+            top: 100px;
+            bottom: 0;
+            width: 50%;
+            content: "";
+            opacity: 0.1;
+            position: absolute;
+        }
+    }
+    .el-scorll {
+        bottom: -150px !important;
+    }
+}
 
 // About 2
 .section-about-2 {

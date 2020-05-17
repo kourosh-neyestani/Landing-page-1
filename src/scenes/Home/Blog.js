@@ -1,7 +1,6 @@
 import React from "react";
-import Slider from "react-slick";
 import { Link } from "react-router-dom";
-import { Container } from "react-grid-system";
+import { Container, Row, Col } from "react-grid-system";
 
 // Components
 import Headline from "../../components/common/Headline";
@@ -31,72 +30,51 @@ const posts = [
         date: "May 21th, 2019",
         link: "/single-post",
     },
+    {
+        title: "What gets in the way of greate Stategy",
+        image: "/assets/images/blog/1-5.jpg",
+        date: "May 21h, 2019",
+        link: "/single-post",
+    },
+    {
+        title: "How to create great logo for your Business",
+        image: "/assets/images/blog/1-6.jpg",
+        date: "May 21th, 2019",
+        link: "/single-post",
+    },
 ];
 
 function Blog() {
-    let sliderSettings = {
-        dots: true,
-        speed: 500,
-        arrows: false,
-        infinite: false,
-        initialSlide: 0,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        centerPadding: 30,
-        draggable: false,
-        responsive: [
-            {
-                breakpoint: 1500,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                },
-            },
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                },
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                },
-            },
-        ],
-    };
-
     return (
-        <section className="section section-blog section-blog-1 bg-gradient-side overlay-color">
+        <section className="section section-blog section-blog-3 bg-gradient-side overlay-color">
             <span className="bg-color bg-dark-60"></span>
             <div className="display-spacing">
                 <Container className="container">
-                    <Headline label="Blog" title="Latest Blog Posts/News" divider_1={true} position="center" />
-                    <Slider className="el-slider el-slider-plr--15" {...sliderSettings}>
+                    <Headline title="Latest Blog Posts/News" divider_1={true} position="center" />
+                    <Row className="mb--30">
                         {posts.map((item, index) => (
-                            <div key={index} className="post-item">
-                                <Link to={`/home-1${item.link}`}>
-                                    <div className="post-image bg-primary">
-                                        <img src={item.image} alt={item.title} />
-                                    </div>
-                                </Link>
-                                <div className="post-content">
-                                    <div className="post-data">
-                                        <h4 className="post-title">
-                                            <Link to={`/home-1${item.link}`}>{item.title}</Link>
-                                        </h4>
-                                        <div className="post-date">
-                                            <i className="ti-time"></i>
-                                            {item.date}
+                            <Col key={index} xs={12} sm={12} md={12} lg={6} xl={4}>
+                                <div className="post-item">
+                                    <Link to={`/home-1${item.link}`}>
+                                        <div className="post-image bg-primary">
+                                            <img src={item.image} alt={item.title} />
+                                        </div>
+                                    </Link>
+                                    <div className="post-content">
+                                        <div className="post-data">
+                                            <h4 className="post-title">
+                                                <Link to={`/home-1${item.link}`}>{item.title}</Link>
+                                            </h4>
+                                            <div className="post-date">
+                                                <i className="ti-time"></i>
+                                                {item.date}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Col>
                         ))}
-                    </Slider>
+                    </Row>
                 </Container>
             </div>
         </section>
