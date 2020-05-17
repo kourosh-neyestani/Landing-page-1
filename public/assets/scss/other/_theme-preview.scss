@@ -250,6 +250,8 @@
         padding: 150px 20px 20px;
         margin-bottom: 30px;
         border: 1px solid $gray;
+        box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
+        transition: all 450ms;
 
         h4 {
             color: $black;
@@ -267,6 +269,9 @@
             height: 90px;
             position: absolute;
             margin: auto;
+        }
+        &:hover {
+            transform: translate(0, -3px);
         }
     }
 }
@@ -308,7 +313,7 @@
         .header-logo {
             top: 0;
             left: 0;
-            
+
             a {
                 top: 0;
                 left: 0;
