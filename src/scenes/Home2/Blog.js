@@ -70,15 +70,14 @@ function Blog() {
     };
 
     return (
-        <section className="section section-blog section-blog-1 bg-gradient-side overlay-color">
-            <span className="bg-color bg-dark-60"></span>
+        <section className="section section-blog section-blog-2">
             <div className="display-spacing">
                 <Container className="container">
                     <Headline label="Blog" title="Latest Blog Posts/News" divider_1={true} position="center" />
                     <Slider className="el-slider el-slider-plr--15" {...sliderSettings}>
                         {posts.map((item, index) => (
                             <div key={index} className="post-item">
-                                <Link to={`/home-1${item.link}`}>
+                                <Link to={`/home-2${item.link}`}>
                                     <div className="post-image bg-primary">
                                         <img src={item.image} alt={item.title} />
                                     </div>

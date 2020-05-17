@@ -209,24 +209,16 @@
         padding-top: 7px;
     }
 }
-.el-headline-link {
-    right: 0;
-    bottom: 3px;
-    position: absolute;
 
-    span {
-        font-weight: 700;
-        display: inline-block;
-        padding-right: 9px;
-    }
-    .icon {
-        top: 2px;
-        color: $primary;
-        font-size: 14px;
-        position: relative;
-    }
-    &:hover {
-        color: $primary;
+@media (max-width: 992px) {
+    .el-heading {
+        p {
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 30px !important;
+            line-height: 1.4;
+        }
     }
 }
 

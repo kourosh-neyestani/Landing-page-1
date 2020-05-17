@@ -39,6 +39,43 @@
         }
     }
 }
+
+// Hero2
+.section-hero-2 {
+    .el-heading {
+        margin-bottom: 30px;
+
+        h1 {
+            font-size: 50px;
+            line-height: 1.4;
+
+            span {
+                color: $primary;
+            }
+        }
+        .label {
+            position: relative;
+            padding-left: 21px;
+
+            span {
+                z-index: 3;
+                color: $black;
+                position: relative;
+            }
+            &:after {
+                left: 0;
+                top: -7px;
+                width: 36px;
+                height: 36px;
+                content: "";
+                position: absolute;
+                border-radius: 50%;
+                background-color: $primary;
+            }
+        }
+    }
+}
+
 @media (max-width: 1500px) {
     .section-hero-1 {
         .hero-sidebar {

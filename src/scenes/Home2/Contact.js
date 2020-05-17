@@ -9,7 +9,7 @@ import Headline from "../../components/common/Headline";
 function Contact() {
     return (
         <section className="section section-contact section-contact-1 display-fit-screen">
-            <div className="section-inner-sidebar overlay-image" style={{ backgroundImage: `url(/assets/images/contact/1.jpg)` }}>
+            <div className="section-inner-sidebar overlay-image" style={{ backgroundImage: `url(/assets/images/contact/2.jpg)` }}>
                 <div className="social-links">
                     <ul>
                         <li>

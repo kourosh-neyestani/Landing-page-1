@@ -44,7 +44,7 @@ function Header() {
 
     return (
         <>
-            <header className="app-header">
+            <header className="app-header app-header-1">
                 <div className="header-logo">
                     <Link to={url}>NUXT</Link>
                 </div>

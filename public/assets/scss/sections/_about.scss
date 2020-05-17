@@ -242,6 +242,42 @@
     }
 }
 
+// About 2
+.section-about-2 {
+    .my-avatar {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-bottom: 30px;
+        border-left: 3px solid $primary;
+        border-bottom: 3px solid $primary;
+    }
+    .my-resume {
+        top: 0;
+        position: relative;
+        padding-bottom: 100px;
+        &:before {
+            top: -100px !important;
+            bottom: 200px !important;
+        }
+        &:after {
+            top: 100px;
+            bottom: 0;
+            width: 50%;
+            content: "";
+            opacity: 0.1;
+            position: absolute;
+        }
+    }
+    .resume-title {
+        &:before {
+            opacity: 1 !important;
+            background-color: $primary !important;
+        }
+    }
+}
+
 @media (max-width: 1200px) {
     .section-about-1 {
         .about-me {
