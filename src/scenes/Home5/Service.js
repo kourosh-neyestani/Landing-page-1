@@ -64,8 +64,8 @@ function Service() {
                     <Headline label="Service" title="Let's See My Services" divider_1={true} position="center" />
                     <Row className="mb--30">
                         {service.map((item, index) => (
-                            <Col sm={6} md={6} lg={4} xl={3}>
-                                <div className="box mb-30" key={index}>
+                            <Col key={index} sm={6} md={6} lg={4} xl={3}>
+                                <div className="box mb-30">
                                     <div className="service-item">
                                         <div className="service-head">
                                             <Icon label={`0${index + 1}.`} title={item.title}>

@@ -19,8 +19,8 @@ function About() {
                         </Container>
                     </div>
                 </div>
-                <span class="el-scroll"></span>
-                <span class="el-scroll-line"></span>
+                <span className="el-scroll"></span>
+                <span className="el-scroll-line"></span>
             </div>
             <div className="section-resume section-resume-1 my-resume">
                 <Container className="container">
