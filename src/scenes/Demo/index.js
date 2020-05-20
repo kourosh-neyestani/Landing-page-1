@@ -106,13 +106,13 @@ function Demo() {
             <div className="theme-preview-hero">
                 <Container className="container">
                     <Row>
-                        <Col lg={8} xl={6}>
+                        <Col lg={8} xl={7}>
                             <div className="display-full-screen">
                                 <div className="display-center">
                                     <header className="el-heading el-heading-side">
-                                        <span className="label">ReactJS Template.</span>
-                                        <h1>Creating Easier Solutions</h1>
-                                        <p>Let's Work Together. We can help to develop your business. We provide the best service that comes with the best results.</p>
+                                        <span className="label">Nuxt ReactJS Template.</span>
+                                        <h1>React Multi Purpose Template</h1>
+                                        <p>Welcome to Nuxt,  Reactjs Multi-Purpose Website Templates, React Portfolio and Corporate Built With React JS. NO jQuery!</p>
                                     </header>
                                     <a href="/home-1/intro" className="button button-lg button-line-light text-primary">
                                         <span className="text">LIVE DEMO</span>
@@ -234,9 +234,9 @@ function Demo() {
                 <span className="bg-color bg-dark-60"></span>
                 <div className="display-center">
                     <h4>
-                        Create your dream
+                        Create your dream site 
                         <br />
-                        site with <span>Nuxt</span> Template!
+                        with <span>Nuxt ReactJS Template!</span>
                     </h4>
                     <a href="/" className="button button-md button-primary">
                         <span className="wave"></span>
