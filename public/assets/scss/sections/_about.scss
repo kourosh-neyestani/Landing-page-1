@@ -183,17 +183,6 @@
 
 // About 1
 .section-about-1 {
-    .section-resume-1 {
-        &:before {
-            top: 0;
-            right: 0;
-            bottom: -140px;
-            width: 50%;
-            content: "";
-            position: absolute;
-            background-color: $primary;
-        }
-    }
     .bg-color {
         background-color: $base-0;
     }

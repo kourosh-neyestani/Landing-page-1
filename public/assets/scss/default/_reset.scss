@@ -8,6 +8,97 @@
     box-sizing: border-box;
 }
 
+:root.skin-1 {
+    --base-0: #151812;
+    --base-1: #ffffff;
+    --primary: #e90041;
+    --primary-1: #ce083d;
+}
+
+:root.skin-2 {
+    --base-0: #f1f1f1;
+    --base-1: #151515;
+    --primary: #55c8ff;
+    --primary-1: #ffa000;
+}
+
+:root.skin-3 {
+    --base-0: #151515;
+    --base-1: #f1f1f1;
+    --primary: #de0d92;
+    --primary-1: #c90080;
+}
+
+:root.skin-4 {
+    --base-0: #0e262b;
+    --base-1: #f1f1f1;
+    --primary: #7b1f29;
+    --primary-1: darkred;
+}
+
+:root.skin-5 {
+    --base-0: #373a36;
+    --base-1: #ffffff;
+    --primary: tomato;
+    --primary-1: tomato;
+}
+
+:root.skin-5 {
+    --base-0: #fff;
+    --base-1: #151515;
+    --primary: #ff4444;
+    --primary-1: #ff4444;
+}
+
+:root.skin-6 {
+    --base-0: #272933;
+    --base-1: #ffffff;
+    --primary: #ffa000;
+    --primary-1: #ffa000;
+}
+
+:root.skin-7 {
+    --base-0: #212121;
+    --base-1: #fff;
+    --primary: #0b7554;
+    --primary-1: #0b7554;
+}
+
+:root.skin-8 {
+    --base-0: #272933;
+    --base-1: #fff;
+    --primary: #00b7b8;
+    --primary-1: #00b7b8;
+}
+
+:root.skin-9 {
+    --base-0: #000;
+    --base-1: #fff;
+    --primary: #00bcd4;
+    --primary-1: #00bcd4;
+}
+
+:root.skin-10 {
+    --base-0: #0a0a0a;
+    --base-1: #ffffff;
+    --primary: #1d32f2;
+    --primary-1: #1d32f2;
+}
+
+:root.skin-11 {
+    --base-0: #121212;
+    --base-1: #e6e2dd;
+    --primary: #845ec2;
+    --primary-1: #845ec2;
+}
+
+:root.skin-12 {
+    --base-0: #0e262b;
+    --base-1: #ffffff;
+    --primary: #7b1f29;
+    --primary-1: darkred;
+}
+
 html {
     overflow: hidden;
     overflow-y: auto;
@@ -348,103 +439,14 @@ select {
     height: 40px;
     padding: 0 15px;
 }
-
 .button:not(:disabled):not(.disabled) {
     cursor: pointer;
 }
-
 img {
     max-width: 100%;
     height: auto;
 }
-
-:root.skin-1 {
-    --base-0: #151812;
-    --base-1: #ffffff;
-    --primary: #e90041;
-    --primary-1: #ce083d;
-}
-
-:root.skin-2 {
-    --base-0: #f1f1f1;
-    --base-1: #151515;
-    --primary: #55c8ff;
-    --primary-1: #ffa000;
-}
-
-:root.skin-3 {
-    --base-0: #151515;
-    --base-1: #f1f1f1;
-    --primary: #DE0D92;
-    --primary-1: #C90080;
-}
-
-:root.skin-4 {
-    --base-0: #0e262b;
-    --base-1: #f1f1f1;
-    --primary: #7b1f29;
-    --primary-1: darkred;
-}
-
-:root.skin-5 {
-    --base-0: #373A36;
-    --base-1: #ffffff;
-    --primary: tomato;
-    --primary-1: tomato;
-}
-
-:root.skin-5 {
-    --base-0: #fff;
-    --base-1: #151515;
-    --primary: #ab0c27;
-    --primary-1: #ab0c27;
-}
-
-:root.skin-6 {
-    --base-0: #272933;
-    --base-1: #ffffff;
-    --primary: #ffa000;
-    --primary-1: #ffa000;
-}
-
-:root.skin-7 {
-    --base-0: #212121;
-    --base-1: #fff;
-    --primary: #0b7554;
-    --primary-1: #0b7554;
-}
-
-:root.skin-8 {
-    --base-0: #272933;
-    --base-1: #fff;
-    --primary: #00b7b8;
-    --primary-1: #00b7b8;
-}
-
-:root.skin-9 {
-    --base-0: #000;
-    --base-1: #fff;
-    --primary: #00BCD4;
-    --primary-1: #00BCD4;
-}
-
-:root.skin-10 {
-    --base-0: #0A0A0A;
-    --base-1: #FFFFFF;
-    --primary: #1D32F2;
-    --primary-1: #1D32F2;
-}
-
-:root.skin-11 {
-    --base-0: #121212;
-    --base-1: #E6E2DD;
-    --primary: #845EC2;
-    --primary-1: #845EC2;
-}
-
-:root.skin-12 {
-    --base-0: #0e262b;
-    --base-1: #ffffff;
-    --primary: #7b1f29;
-    --primary-1: darkred;
+.skin-5 .button,
+.skin-5 .el-tabs .el-tabs-links li.active {
+    color: #fff !important;
 }

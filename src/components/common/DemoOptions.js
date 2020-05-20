@@ -40,19 +40,19 @@ const colors = [
         className: "skin-1",
     },
     {
-        color: "#DE0D92",
+        color: "#00BCD4",
         className: "skin-2",
     },
     {
-        color: "#7b1f29",
+        color: "#de0d92",
         className: "skin-3",
     },
     {
-        color: "#ff5e14",
+        color: "#7b1f29",
         className: "skin-4",
     },
     {
-        color: "tomato",
+        color: "#ff4444",
         className: "skin-5",
     },
     {

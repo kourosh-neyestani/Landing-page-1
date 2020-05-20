@@ -6,7 +6,7 @@ import { FaTwitter, FaGithub, FaVimeo } from "react-icons/fa";
 function Intro() {
     const sliderSettings = {
         dots: true,
-        arrow: false,
+        arrows: false,
         autoplay: true
     }
 
