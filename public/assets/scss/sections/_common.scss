@@ -106,3 +106,12 @@
     Section: 404
 ------------------------------------*/
 
+.section-error-404 {
+    p {
+        margin-bottom: 45px;
+    }
+    h1 {
+        color: $primary;
+        font-size: 120px;
+    }
+}
