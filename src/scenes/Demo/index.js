@@ -99,7 +99,7 @@ function Demo() {
                 <div className="header-logo">
                     <a href="/">NUXT</a>
                 </div>
-                <a href="/" className="button button-lg button-primary">
+                <a href="https://themeforest.net/item/nuxt-react-multipurpose-template/26806123" className="button button-lg button-primary">
                     <span className="wave"></span>
                     <span className="text">BUY NOW</span>
                 </a>
@@ -118,7 +118,7 @@ function Demo() {
                                     <Link to="/home-1/intro" className="button button-lg button-line-light text-primary">
                                         <span className="text">LIVE DEMO</span>
                                     </Link>
-                                    <a href="/" className="button button-lg button-primary">
+                                    <a href="https://themeforest.net/item/nuxt-react-multipurpose-template/26806123" className="button button-lg button-primary">
                                         <span className="wave"></span>
                                         <span className="text">PURCHASE</span>
                                     </a>
@@ -239,7 +239,7 @@ function Demo() {
                         <br />
                         with <span>Nuxt ReactJS Template!</span>
                     </h4>
-                    <a href="/" className="button button-md button-primary">
+                    <a href="https://themeforest.net/item/nuxt-react-multipurpose-template/26806123" className="button button-md button-primary">
                         <span className="wave"></span>
                         <span className="text">PURCHASE NOW</span>
                     </a>
