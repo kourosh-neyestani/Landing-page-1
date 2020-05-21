@@ -115,7 +115,7 @@ function Demo() {
                                         <h1>React Multi Purpose Template</h1>
                                         <p>Welcome to Nuxt, Reactjs Multi-Purpose Website Templates, React Portfolio and Corporate Built With React JS. NO jQuery!</p>
                                     </header>
-                                    <a href="/home-1/intro" className="button button-lg button-line-light text-primary">
+                                    <a href="#theme-preview-demos" className="button button-lg button-line-light text-primary">
                                         <span className="text">LIVE DEMO</span>
                                     </a>
                                     <a href="/" className="button button-lg button-primary">
@@ -177,7 +177,7 @@ function Demo() {
                 <span className="bg-color bg-dark-60"></span>
                 <div className="display-spacing"></div>
             </div>
-            <div className="theme-preview-demos">
+            <div id="theme-preview-demos" className="theme-preview-demos">
                 <div className="display-spacing">
                     <Container className="container">
                         <div className="theme-preview-heading">
