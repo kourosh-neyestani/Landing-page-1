@@ -14,6 +14,7 @@ import PortfolioDetails from "./PortfolioDetails";
 
 // Components
 import Switch from "../../components/common/Switch";
+import Helmet from "../../components/common/Helmet";
 import RedirectAs404 from "../../components/common/RedirectAs404";
 
 const routes = [
@@ -71,6 +72,7 @@ function Home() {
 
     return (
         <div>
+            <Helmet title="Home 2"/>
             <Header />
             <Switch>
                 {routes.map((item, index) => (

@@ -13,6 +13,7 @@ import SinglePost from "./SinglePost";
 import PortfolioDetails from "./PortfolioDetails";
 
 // Components
+import Helmet from "../../components/common/Helmet";
 import Switch from "../../components/common/Switch";
 import RedirectAs404 from "../../components/common/RedirectAs404";
 
@@ -71,6 +72,7 @@ function Home() {
 
     return (
         <div>
+            <Helmet title="Home 1"/>
             <Header />
             <Switch>
                 {routes.map((item, index) => (
