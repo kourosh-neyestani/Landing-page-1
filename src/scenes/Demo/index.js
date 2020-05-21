@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-grid-system";
 
 const demos = [
@@ -112,7 +113,7 @@ function Demo() {
                                     <header className="el-heading el-heading-side">
                                         <span className="label">Nuxt ReactJS Template.</span>
                                         <h1>React Multi Purpose Template</h1>
-                                        <p>Welcome to Nuxt,  Reactjs Multi-Purpose Website Templates, React Portfolio and Corporate Built With React JS. NO jQuery!</p>
+                                        <p>Welcome to Nuxt, Reactjs Multi-Purpose Website Templates, React Portfolio and Corporate Built With React JS. NO jQuery!</p>
                                     </header>
                                     <a href="/home-1/intro" className="button button-lg button-line-light text-primary">
                                         <span className="text">LIVE DEMO</span>
@@ -187,10 +188,10 @@ function Demo() {
                             {demos.map((item, index) => (
                                 <Col key={index} xs={12} md={12} lg={6} xl={4}>
                                     <div className="item">
-                                        <a href={item.link}>
+                                        <Link to={item.link}>
                                             <img src={item.image} alt={item.title} />
                                             <h4>{item.title}</h4>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </Col>
                             ))}
@@ -234,7 +235,7 @@ function Demo() {
                 <span className="bg-color bg-dark-60"></span>
                 <div className="display-center">
                     <h4>
-                        Create your dream site 
+                        Create your dream site
                         <br />
                         with <span>Nuxt ReactJS Template!</span>
                     </h4>

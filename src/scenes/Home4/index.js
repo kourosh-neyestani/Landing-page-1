@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { Route, useRouteMatch } from "react-router-dom";
-import { spring, AnimatedSwitch } from "react-router-transition";
 
 // Sections
 import Blog from "./Blog";
@@ -13,36 +12,48 @@ import Portfolio from "./Portfolio";
 import SinglePost from "./SinglePost";
 import PortfolioDetails from "./PortfolioDetails";
 
+// Components
+import Switch from "../../components/common/Switch";
+import RedirectAs404 from "../../components/common/RedirectAs404";
+
 const routes = [
     {
-        path: "/intro",
+        exact: true,
+        path: "",
         component: <Intro />,
     },
     {
+        exact: false,
         path: "/about",
         component: <About />,
     },
     {
+        exact: false,
         path: "/service",
         component: <Service />,
     },
     {
+        exact: false,
         path: "/portfolio",
         component: <Portfolio />,
     },
     {
+        exact: false,
         path: "/portfolio-details",
         component: <PortfolioDetails />,
     },
     {
+        exact: false,
         path: "/blog",
         component: <Blog />,
     },
     {
+        exact: false,
         path: "/single-post",
         component: <SinglePost />,
     },
     {
+        exact: false,
         path: "/contact",
         component: <Contact />,
     },
@@ -61,51 +72,16 @@ function Home() {
     return (
         <div>
             <Header />
-            <AnimatedSwitch atEnter={bounceTransition.atEnter} atLeave={bounceTransition.atLeave} atActive={bounceTransition.atActive} mapStyles={mapStyles} className="route-wrapper">
-                <Route exact path={path}>
-                    <h3>Welcome to Home</h3>
-                </Route>
+            <Switch>
                 {routes.map((item, index) => (
-                    <Route key={index} path={`${path}${item.path}`}>
+                    <Route key={index} path={`${path}${item.path}`} exact={item.exact}>
                         {item.component}
                     </Route>
                 ))}
-            </AnimatedSwitch>
+                <Route component={RedirectAs404} />
+            </Switch>
         </div>
     );
 }
-
-function mapStyles(styles) {
-    return {
-        opacity: styles.opacity,
-        transition: `all 180ms linear`,
-        transform: `scale(${styles.scale}) rotate(${styles.rotate}deg)`,
-    };
-}
-
-function bounce(val) {
-    return spring(val, {
-        stiffness: 330,
-        damping: 22,
-    });
-}
-
-const bounceTransition = {
-    atEnter: {
-        opacity: 0,
-        scale: 1.2,
-        rotate: 0,
-    },
-    atLeave: {
-        opacity: bounce(1),
-        scale: bounce(1),
-        rotate: 0,
-    },
-    atActive: {
-        opacity: bounce(1),
-        scale: bounce(1),
-        rotate: bounce(0),
-    },
-};
 
 export default Home;
