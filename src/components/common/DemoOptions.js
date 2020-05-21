@@ -10,27 +10,27 @@ const pages = [
     {
         title: "Home 1",
         image: "/assets/images/demo/1.jpg",
-        link: "/home-1",
+        link: "/home-1/intro",
     },
     {
         title: "Home 2",
         image: "/assets/images/demo/2.jpg",
-        link: "/home-2",
+        link: "/home-2/intro",
     },
     {
         title: "Home 3",
         image: "/assets/images/demo/3.jpg",
-        link: "/home-3",
+        link: "/home-3/intro",
     },
     {
         title: "Home 4",
         image: "/assets/images/demo/4.jpg",
-        link: "/home-4",
+        link: "/home-4/intro",
     },
     {
         title: "Home 5",
         image: "/assets/images/demo/5.jpg",
-        link: "/home-5",
+        link: "/home-5/intro",
     },
 ];
 
@@ -109,14 +109,6 @@ function DemoOptions() {
                     </div>
                     <span className="app-demo-options-title">Demo Options</span>
                     <div className="app-demo-options-item">
-                        <span className="app-demo-options-subtitle">- Color Schemes</span>
-                        <ul className="app-demo-options-colors">
-                            {colors.map((item, index) => (
-                                <li key={index} style={{ backgroundColor: item.color }} onClick={(e) => handleClickColor(e, item)}></li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div className="app-demo-options-item">
                         <span className="app-demo-options-subtitle">- Layout</span>
                         <ul className="app-demo-options-layout">
                             {pages.map((item, index) => (
@@ -126,6 +118,14 @@ function DemoOptions() {
                                         <span>{item.title}</span>
                                     </Link>
                                 </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className="app-demo-options-item">
+                        <span className="app-demo-options-subtitle">- Color Schemes</span>
+                        <ul className="app-demo-options-colors">
+                            {colors.map((item, index) => (
+                                <li key={index} style={{ backgroundColor: item.color }} onClick={(e) => handleClickColor(e, item)}></li>
                             ))}
                         </ul>
                     </div>

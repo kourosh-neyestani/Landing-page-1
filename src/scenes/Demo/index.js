@@ -4,31 +4,31 @@ import { Container, Row, Col } from "react-grid-system";
 
 const demos = [
     {
-        link: "/home-1",
+        link: "/home-1/intro",
         title: "Demo 1",
         hover: true,
         image: "/assets/images/demo/1.jpg",
     },
     {
-        link: "/home-2",
+        link: "/home-2/intro",
         title: "Demo 2",
         hover: true,
         image: "/assets/images/demo/2.jpg",
     },
     {
-        link: "/home-3",
+        link: "/home-3/intro",
         title: "Demo 3",
         hover: true,
         image: "/assets/images/demo/3.jpg",
     },
     {
-        link: "/home-4",
+        link: "/home-4/intro",
         title: "Demo 4",
         hover: true,
         image: "/assets/images/demo/4.jpg",
     },
     {
-        link: "/home-5",
+        link: "/home-5/intro",
         title: "Demo 5",
         hover: true,
         image: "/assets/images/demo/5.jpg",
@@ -115,7 +115,7 @@ function Demo() {
                                         <h1>React Multi Purpose Template</h1>
                                         <p>Welcome to Nuxt, Reactjs Multi-Purpose Website Templates, React Portfolio and Corporate Built With React JS. NO jQuery!</p>
                                     </header>
-                                    <Link to="/home-1" className="button button-lg button-line-light text-primary">
+                                    <Link to="/home-1/intro" className="button button-lg button-line-light text-primary">
                                         <span className="text">LIVE DEMO</span>
                                     </Link>
                                     <a href="/" className="button button-lg button-primary">

@@ -19,42 +19,34 @@ import RedirectAs404 from "../../components/common/RedirectAs404";
 
 const routes = [
     {
-        exact: true,
-        path: "",
+        path: "/intro",
         component: <Intro />,
     },
     {
-        exact: false,
         path: "/about",
         component: <About />,
     },
     {
-        exact: false,
         path: "/service",
         component: <Service />,
     },
     {
-        exact: false,
         path: "/portfolio",
         component: <Portfolio />,
     },
     {
-        exact: false,
         path: "/portfolio-details",
         component: <PortfolioDetails />,
     },
     {
-        exact: false,
         path: "/blog",
         component: <Blog />,
     },
     {
-        exact: false,
         path: "/single-post",
         component: <SinglePost />,
     },
     {
-        exact: false,
         path: "/contact",
         component: <Contact />,
     },
@@ -72,11 +64,11 @@ function Home() {
 
     return (
         <div>
-            <Helmet title="Home 1"/>
+            <Helmet title="Home 1" />
             <Header />
             <Switch>
                 {routes.map((item, index) => (
-                    <Route key={index} path={`${path}${item.path}`} exact={item.exact}>
+                    <Route key={index} path={`${path}${item.path}`} exact>
                         {item.component}
                     </Route>
                 ))}
