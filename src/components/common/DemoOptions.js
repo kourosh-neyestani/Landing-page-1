@@ -10,27 +10,27 @@ const pages = [
     {
         title: "Home 1",
         image: "/assets/images/demo/1.jpg",
-        link: "/home-1/intro",
+        link: "/home-1",
     },
     {
         title: "Home 2",
         image: "/assets/images/demo/2.jpg",
-        link: "/home-2/intro",
+        link: "/home-2",
     },
     {
         title: "Home 3",
         image: "/assets/images/demo/3.jpg",
-        link: "/home-3/intro",
+        link: "/home-3",
     },
     {
         title: "Home 4",
         image: "/assets/images/demo/4.jpg",
-        link: "/home-4/intro",
+        link: "/home-4",
     },
     {
         title: "Home 5",
         image: "/assets/images/demo/5.jpg",
-        link: "/home-5/intro",
+        link: "/home-5",
     },
 ];
 

@@ -4,31 +4,31 @@ import { Container, Row, Col } from "react-grid-system";
 
 const demos = [
     {
-        link: "/home-1/intro",
+        link: "/home-1",
         title: "Demo 1",
         hover: true,
         image: "/assets/images/demo/1.jpg",
     },
     {
-        link: "/home-2/intro",
+        link: "/home-2",
         title: "Demo 2",
         hover: true,
         image: "/assets/images/demo/2.jpg",
     },
     {
-        link: "/home-3/intro",
+        link: "/home-3",
         title: "Demo 3",
         hover: true,
         image: "/assets/images/demo/3.jpg",
     },
     {
-        link: "/home-4/intro",
+        link: "/home-4",
         title: "Demo 4",
         hover: true,
         image: "/assets/images/demo/4.jpg",
     },
     {
-        link: "/home-5/intro",
+        link: "/home-5",
         title: "Demo 5",
         hover: true,
         image: "/assets/images/demo/5.jpg",
